@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea placeholder="where are you" style="width: 500px; height: 100px;"></textarea>
+    <br />
+    <button id="btn_control">开始录音</button>
+    <div class="output-box" id="result_output">
+      <div class="left">
+        <p>准确度分：<span id="accuracy_score">0</span></p>
+        <p>流畅度分：<span id="fluency_score">0</span></p>
+        <p>完整度分：<span id="integrity_score">0</span></p>
+        <p>声韵分（仅限中文）：<span id="phone_score">0</span></p>
+        <p>调型分（仅限中文）：<span id="tone_score">0</span></p>
+        <p>整体印象分（仅限中文）：<span id="emotion_score">0</span></p>
+        <p>总分：<span id="total_score">0</span></p>
+      </div>
+      <div id="right" style="display: none;">
+        <p class="title">红色文字代表发音不标准：</p>
+        <p id="result"></p>
+      </div>
+    </div>
+    <script>
+      const APPID = "xxx";
+      const API_SECRET = "xxx";
+      const API_KEY = "xxx";
+    </script>
+    <script src="../fast-xml-parser.min.js"></script>
+    <script src="../crypto-js.js"></script>
+    <script src="../../dist/index.umd.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
