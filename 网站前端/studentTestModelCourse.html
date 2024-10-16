@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RedamancyXun">
+    <meta name="description" content="即享朗读评分首页">
+    <title>即享朗读评分</title>
+    <link rel="icon" href="images/logo.svg" sizes="16x16" type="image/svg">
+    <link rel="stylesheet" href="styles/studentTestModelCourse.css">
+    <script src="scripts/studentTestModelCourse.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img id="avatar" src="images/defaultAvatar.svg" alt="avatar" class="avatar">
+      <div id="welcome" class="welcome">你好，小吉祥！</div>
+      <div id="time" class="time">2024年7月8日 星期一</div>
+      <div onclick="window.location.href = 'studentTestModel.html';">
+        <img src="images/back.svg" alt="back" class="back">
+    </div>
+    </header>
+    <main>    
+        <div class="container">
+            <div class="courseTitle">
+                第三单元 第三课
+            </div>
+            <div class="courseContent">妈妈：谈恋爱时说的话怎么能当真呢？过日子就是过日子，和谈情说爱是两回事。你这么大的人了连这个也分不清吗？白念了那么多年书了。
+女儿：可我还是觉得委屈！他怎么能冲我发脾气呢？
+妈妈：孩子，家不是讲理的地方，是两个人互相理解的地方。有什么事多从对方的角度想一想，互相迁就一下就过去了。要是总是吵架，家怎么会是你的避风港呢？那样，你的婚姻很快就会亮起红灯的！妈不能跟你一辈 子，你别老像个孩子似的，这样将来妈怎么能放心呢？
+女儿：好了，你别那么担心了，我只是回来冲你撒撒娇。我晾他一会儿，让他反思反思，他也会对我更好的。不信你等着瞧，过</div>
+        </div>
+        <div class="audio">
+            <img id="recordingTip" src="images/recording.svg" alt="点击录音" class="recordingTip">
+            <div class="audioTip">
+                <div id="record-status">状态: 尚未录音</div>
+                <div id="progress" class="progress">
+                    <div id="progress-container">
+                        <div id="progress-bar"></div>
+                    </div>
+                    <div id="progress-time">0s/60s
+                    </div>
+                </div>
+                <audio id="audio-playback" controls></audio>
+                <div class="controls">
+                    <button id="start-recording" class="control-button" title="开始录音">🎙️</button>
+                    <button id="stop-recording" class="control-button" title="停止录音" disabled>⏹️</button>
+                    <button id="upload" class="control-button" title="上传音频" disabled>📤</button>
+                    <button id="cancel" class="control-button" title="取消录音">❌</button>
+                </div>
+            </div>
+            <label for="audio-file" class="uploadAudio">
+                <img src="images/uploadAudio.svg" alt="上传录音" class="uploadAudioTip">
+            </label>
+            <input type="file" id="audio-file" accept="audio/*" hidden>
+        </div>
+    </main>
+  </body>
+</html>

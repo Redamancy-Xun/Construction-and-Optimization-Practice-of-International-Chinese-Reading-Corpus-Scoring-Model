@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RedamancyXun">
+    <meta name="description" content="即享朗读评分首页">
+    <title>即享朗读评分</title>
+    <link rel="icon" href="images/logo.svg" sizes="16x16" type="image/svg">
+    <link rel="stylesheet" href="styles/studentSignupInformation.css">
+    <script src="scripts/studentSignupInformation.js" defer></script>
+  </head>
+  <body>
+    <img src="images/cloudTop.svg" alt="cloudTop" class="cloudTop">
+    <!-- <div onclick="window.history.go(-1);">
+      <img src="images/back.svg" alt="back" class="back">
+    </div> -->
+    <header>
+        <h1>信息填写</h1>
+        <img src="images/logoIn.svg" alt="logo" class="indexLogo">
+    </header>
+    <main>
+        <div class="signupInformation">
+            <form id="signupForm">
+              <div class="studentInformation">
+                <div>
+                  <label for="username">用户名：</label>
+                  <input id="username" type="text" maxlength="8"  name="username" class="username" required>
+                </div>
+                <div>
+                  <label for="sex" class="sexTip">生理性别：</label>
+                  <span class="genderSelection">
+                    <button id="maleButton" class="maleButton" data-value=0>♂男</button>
+                    <button id="femaleButton" class="femaleButton" data-value=1>♀女</button>
+                  </span>
+                </div>
+                <div>
+                  <label for="age">年龄：</label>
+                  <input id="age" type="number" min=12 max=100 name="age" class="age" required>
+                </div>
+                <div>
+                  <label for="nation">国籍：</label>
+                  <input id="nation" type="text"  name="nation" class="nation" required>
+                </div>
+                <div>
+                  <label for="avatar">头像：</label>
+                  <span class="avatarInformation">
+                    <img src="images/defaultAvatar.svg" alt="defaultAvatar" class="defaultAvatar">
+                    <label class="avatar" onclick="window.location.assign('addAvatar.html');">点击添加</label>
+                  </span>
+                  <div class="avatarTips">
+                    <span class="defaultAvatarTip">默认头像</span>
+                    <span class="avatarTip">上传头像</span>
+                  </div>
+                </div>
+              </div>
+              <button id="studentSignup" type="submit" class="signup">确定</button>
+            </form>
+        </div>
+    </main>
+    <img src="images/cloudBottom.svg" alt="cloudBottom" class="cloudBottom">
+  </body>
+</html>

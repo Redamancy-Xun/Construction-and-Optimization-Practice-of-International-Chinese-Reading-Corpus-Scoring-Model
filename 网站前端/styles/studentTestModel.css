@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "myFont";
+    src:
+      url("fonts/YouSheBiaoTiYuan.woff2") format("woff2"),
+      url("fonts/YouSheBiaoTiYuan.woff") format("woff"),
+      url("fonts/YouSheBiaoTiYuan.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: "myFont";
+    font-style: normal;
+    background-color: rgb(181, 223, 252);
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+}
+
+header {
+    margin-top: 2%;
+}
+
+.avatar {
+    width: 5.4em;
+    height: 5.4em;
+    border-radius: 100%;
+    position: absolute;
+    left: 1.9em;
+    top: 2.4em;
+}
+
+.welcome {
+    margin-left: 4.2em;
+    margin-top: 1.7em;
+    font-size: 1.9em;
+}
+
+.time {
+    font-size: 1.2em;
+    margin-left: 6.7em;
+    margin-top: 0em;
+}
+
+.back {
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.container {
+    margin: 10% auto;
+    text-align: center;
+}
+
+/* .unit-list {
+    overflow-y: auto;
+    max-height: 80vh; // Adjust height as needed
+} */
+
+.unit {
+    background: rgba(241, 207, 81, 1);
+    border-radius: 25px;
+    margin: 4% auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 2.5em;
+    color: #ffffff;
+    width: 75%;
+    line-height: 180%;
+}
+
+.unit:hover {
+    background: rgba(249, 137, 136, 1);
+}
+
+.courses {
+    display: none;
+    padding: 3%;
+    margin-top: -5%;
+}
+
+button {
+    all: unset;
+}
+
+.course {
+    background: rgba(255, 255, 255, 0.66);
+    border-radius: 25px;
+    margin: 6% auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.6em;
+    color: #000000;
+    width: 70%;
+    line-height: 220%;
+    display: block;
+}
+
+.course:hover {
+    text-decoration: underline;
+    background-color: rgba(210, 72, 72, 0.8);
+}
