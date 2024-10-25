@@ -83,7 +83,7 @@ document.getElementById('update').addEventListener('click', async event => {
 
     try {
         // 发送 AJAX 请求到后端注册接口
-        const response = await fetch('http://139.196.124.95:8080/user/updateUserInfo', {
+        const response = await fetch('http://localhost:8080/user/updateUserInfo', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

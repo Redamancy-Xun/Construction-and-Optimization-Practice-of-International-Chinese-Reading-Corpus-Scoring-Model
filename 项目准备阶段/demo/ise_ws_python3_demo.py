@@ -1,4 +1,6 @@
 import os
+
+from xml.etree import ElementTree as ET
 import websocket
 import datetime
 import hashlib

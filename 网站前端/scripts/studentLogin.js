@@ -16,7 +16,7 @@ document.getElementsByClassName('login')[0].addEventListener('click', async even
 
     try {
         // 发送 AJAX 请求到后端登录接口
-        const response = await fetch('http://139.196.124.95:8080/user/login?telephone=' + telephone + '&password=' + password + '&role=' + role, {
+        const response = await fetch('http://localhost:8080/user/login?telephone=' + telephone + '&password=' + password + '&role=' + role, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

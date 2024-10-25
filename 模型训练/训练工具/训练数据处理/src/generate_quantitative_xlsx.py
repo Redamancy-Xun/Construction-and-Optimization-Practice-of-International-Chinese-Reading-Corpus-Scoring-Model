@@ -22,10 +22,10 @@ for filename in os.listdir(os.path.join("..", "data", "pre_data", "xml")):
                 read_sentence_data = {
                     'filename': filename,
                     'content': read_sentence.get('content'),
-                    'type': 'read_sentence',
+                    # 'type': 'total',#
                     'beg_pos': read_sentence.get('beg_pos'),
                     'end_pos': read_sentence.get('end_pos'),
-                    'time_len': read_sentence.get('time_len'),
+                    # 'time_len': read_sentence.get('time_len'),
                     'fluency_score': read_sentence.get('fluency_score'),
                     'integrity_score': read_sentence.get('integrity_score'),
                     'phone_score': read_sentence.get('phone_score'),
@@ -35,49 +35,51 @@ for filename in os.listdir(os.path.join("..", "data", "pre_data", "xml")):
                 all_data.append(read_sentence_data)
 
                 for sentence in read_sentence.findall('.//sentence'):
-                    sentence_data = {
-                        'filename': filename,
-                        'content': sentence.get('content'),
-                        'type': 'sentence',
-                        'beg_pos': sentence.get('beg_pos'),
-                        'end_pos': sentence.get('end_pos'),
-                        'time_len': sentence.get('time_len'),
-                        'phone_score': 'null',
-                        'tone_score': 'null',
-                        'total_score': 'null'
-                    }
-                    all_data.append(sentence_data)
+                    # sentence_data = {
+                    #     'filename': filename,
+                    #     'content': sentence.get('content'),
+                    #     'type': 'sentence',
+                    #     'beg_pos': sentence.get('beg_pos'),
+                    #     'end_pos': sentence.get('end_pos'),
+                    #     # 'time_len': sentence.get('time_len'),
+                    #     'phone_score': '',
+                    #     'tone_score': '',
+                    #     'total_score': ''
+                    # }
+                    # all_data.append(sentence_data)
 
                     for word in sentence.findall('.//word'):
                         sylls = word.findall('.//syll')
                         for syll in sylls:
-                            syll_data = {
-                                'filename': filename,
-                                'content': syll.get('content'),
-                                'type': 'syll',
-                                'beg_pos': syll.get('beg_pos'),
-                                'end_pos': syll.get('end_pos'),
-                                'time_len': syll.get('time_len'),
-                                'dp_message': syll.get('dp_message'),
-                                'rec_node_type': syll.get('rec_node_type')
-                            }
-                            all_data.append(syll_data)
+                            # syll_data = {
+                            #     'filename': filename,
+                            #     'content': syll.get('content'),
+                            #     'type': 'syll',
+                            #     'beg_pos': syll.get('beg_pos'),
+                            #     'end_pos': syll.get('end_pos'),
+                            #     'time_len': syll.get('time_len'),
+                            #     'dp_message': syll.get('dp_message'),
+                            #     'rec_node_type': syll.get('rec_node_type'),
+                            #     'symbol': syll.get('symbol'),
+                            # }
+                            # all_data.append(syll_data)
 
                             phones = syll.findall('.//phone')
                             for phone in phones:
                                 phone_data = {
                                     'filename': filename,
                                     'content': phone.get('content'),
-                                    'type': 'phone',
+                                    # 'type': 'phone',
                                     'beg_pos': phone.get('beg_pos'),
                                     'end_pos': phone.get('end_pos'),
-                                    'time_len': phone.get('time_len'),
+                                    # 'time_len': phone.get('time_len'),
                                     'dp_message': phone.get('dp_message'),
-                                    'rec_node_type': phone.get('rec_node_type'),
-                                    'symbol': phone.get('symbol'),
+                                    # 'rec_node_type': phone.get('rec_node_type'),#
+                                    # 'symbol': '',
+                                    'mono_tone': phone.get('mono_tone'),
                                     'is_yun': phone.get('is_yun'),
                                     'perr_msg': phone.get('perr_msg'),
-                                    'perr_level_msg': phone.get('perr_level_msg')
+                                    # 'perr_level_msg': phone.get('perr_level_msg')
                                 }
                                 all_data.append(phone_data)
 

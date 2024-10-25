@@ -16,6 +16,9 @@ if (localStorage.getItem('username')) {
 if (localStorage.getItem('avatar')) {
     document.getElementById('avatar').src = localStorage.getItem('avatar');
 }
+if (localStorage.getItem('courseContent')) {
+    document.querySelector('.courseContent').textContent = localStorage.getItem('courseContent');
+}
 
 // 实时改变time
 function showTime() {
@@ -54,6 +57,7 @@ const progressTime = document.getElementById("progress-time");
 
 // 处理开始录音按钮点击事件
 startButton.addEventListener("click", async () => {
+
     // 清空 audioChunks 数组以便进行新的录音
     audioChunks = [];
 
@@ -74,14 +78,23 @@ startButton.addEventListener("click", async () => {
 
     // 当录音停止时，处理录音结果
     mediaRecorder.onstop = () => {
+
+        // 按钮样式与功能（写死）
+        startButton.style.background = "rgba(255, 255, 255, 0.824)";
+        startButton.disabled = false;
+        stopButton.style.background = "rgba(249, 137, 136, 1)";
+        stopButton.disabled = true;
+        uploadButton.style.background = "rgba(255, 255, 255, 0.824)";
+        uploadButton.disabled = false;
+        cancelButton.style.background = "rgba(255, 255, 255, 0.824)";
+        cancelButton.disabled = false;
+
         // 将音频片段合并成一个 Blob 对象
         const audioBlob = new Blob(audioChunks, { type: "audio/wav" });
         // 创建一个 URL 以便在音频播放元素中播放音频
         const audioUrl = URL.createObjectURL(audioBlob);
         audioPlayback.src = audioUrl;
         audioPlayback.style.display = 'block';
-        // 启用上传按钮
-        uploadButton.disabled = false;
         // 更新录音状态显示
         recordStatus.textContent = "状态: 录音已结束";
         
@@ -93,9 +106,17 @@ startButton.addEventListener("click", async () => {
     mediaRecorder.start();
     // 更新录音状态显示
     recordStatus.textContent = "状态: 录音中...";
-    // 禁用开始按钮，启用停止和取消按钮
-    startButton.disabled = true;
+
+    // 按钮样式与功能（写死）
+    startButton.style.background = "rgba(249, 137, 136, 1)";
+    startButton.disabled = true
+    stopButton.style.background = "rgba(255, 255, 255, 0.824)";
     stopButton.disabled = false;
+    uploadButton.style.background = "rgba(255, 255, 255, 0.4)";
+    uploadButton.disabled = true;
+    cancelButton.style.background = "rgba(255, 255, 255, 0.824)";
+    cancelButton.disabled = false;
+
     audioPlayback.style.display = 'none';
 
     // 初始化录音时间和进度条
@@ -105,6 +126,23 @@ startButton.addEventListener("click", async () => {
         const percentage = (recordingTime / 60) * 100; // 假设最大录音时间为60秒
         progressBar.style.width = percentage + '%';
         progressTime.textContent = `${recordingTime}s/60s`;
+
+        // 当录音时间达到60秒时，自动停止录音
+        if (recordingTime >= 60) {
+            // 停止录音
+            mediaRecorder.stop();
+            // 按钮样式与功能（写死）
+            startButton.style.background = "rgba(255, 255, 255, 0.824)";
+            startButton.disabled = false;
+            stopButton.style.background = "rgba(249, 137, 136, 1)";
+            stopButton.disabled = true;
+            uploadButton.style.background = "rgba(255, 255, 255, 0.824)";
+            uploadButton.disabled = false;
+            cancelButton.style.background = "rgba(255, 255, 255, 0.824)";
+            cancelButton.disabled = false;
+            // 更新录音状态显示
+            recordStatus.textContent = "状态: 录音已结束";
+        }
     }, 1000);
 });
 
@@ -112,10 +150,15 @@ startButton.addEventListener("click", async () => {
 stopButton.addEventListener("click", () => {
     // 停止录音
     mediaRecorder.stop();
-    // 启用开始按钮，禁用停止和上传按钮
+    // 按钮样式与功能（写死）
+    startButton.style.background = "rgba(255, 255, 255, 0.824)";
     startButton.disabled = false;
+    stopButton.style.background = "rgba(249, 137, 136, 1)";
     stopButton.disabled = true;
+    uploadButton.style.background = "rgba(255, 255, 255, 0.824)";
     uploadButton.disabled = false;
+    cancelButton.style.background = "rgba(255, 255, 255, 0.824)";
+    cancelButton.disabled = false;
     // 更新录音状态显示
     recordStatus.textContent = "状态: 录音已结束";
 });
@@ -131,10 +174,15 @@ cancelButton.addEventListener("click", () => {
     audioChunks = [];
     // 停止录音
     mediaRecorder.stop();
-    // 启用开始按钮，禁用停止、上传和取消按钮
+    // 按钮样式与功能（写死）
+    startButton.style.background = "rgba(255, 255, 255, 0.824)";
     startButton.disabled = false;
+    stopButton.style.background = "rgba(255, 255, 255, 0.4)";
     stopButton.disabled = true;
+    uploadButton.style.background = "rgba(255, 255, 255, 0.4)";
     uploadButton.disabled = true;
+    cancelButton.style.background = "rgba(255, 255, 255, 0.824)";
+    cancelButton.disabled = false;
     // 更新录音状态显示
     recordStatus.textContent = "状态: 尚未录音";
     // 停止更新进度条

@@ -53,7 +53,7 @@ time.addEventListener('click', () => {
 // 加载用户信息接口
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://139.196.124.95:8080/user/getUserInfo', {
+        const response = await fetch('http://localhost:8080/user/getUserInfo', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

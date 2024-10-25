@@ -122,11 +122,20 @@ button {
     align-items: center;
     border: none;
     font-size: 1.8em;
-    background: rgba(255, 255, 255, 0.66);
+    background: rgba(255, 255, 255, 0.824);
     border-radius: 20px;
     padding: 1%;
 }
 
+#stop-recording {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#upload {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* 
 .control-button:hover {
     background: rgba(249, 137, 136, 1);
 }
@@ -142,6 +151,7 @@ button {
 
 .control-button:disabled {
     background: rgba(255, 255, 255, 0.4);
+    
 }
 
 .control-button:disabled:hover {
@@ -154,7 +164,7 @@ button {
 
 .control-button:disabled:focus {
     background: rgba(249, 137, 136, 1);
-}
+} */
 
 #record-status {
     margin-left: 5%;
@@ -163,7 +173,7 @@ button {
 }
 
 .progress {
-    background: rgba(255, 255, 255, 0.66);
+    background: rgba(255, 255, 255, 0.824);
     width: 80%;
     height: 20%;
     border-radius: 30px;

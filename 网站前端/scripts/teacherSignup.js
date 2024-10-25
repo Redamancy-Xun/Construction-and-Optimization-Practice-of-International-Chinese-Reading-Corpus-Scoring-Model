@@ -49,7 +49,7 @@ document.getElementById('teacherSignup').addEventListener('submit', async event 
 
     try {
         // 发送 AJAX 请求到后端注册接口
-        const response = await fetch('http://139.196.124.95:8080/signup', {
+        const response = await fetch('http://localhost:8080/signup', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

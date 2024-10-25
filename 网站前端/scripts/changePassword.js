@@ -62,7 +62,7 @@ document.getElementById('change').addEventListener('click', async event => {
 
     try {
         // 发送 AJAX 请求到后端注册接口
-        const response = await fetch('http://139.196.124.95:8080/user/changePassword?oldPassword=' + oldPassword + '&newPassword=' + newPassword, {
+        const response = await fetch('http://localhost:8080/user/changePassword?oldPassword=' + oldPassword + '&newPassword=' + newPassword, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
