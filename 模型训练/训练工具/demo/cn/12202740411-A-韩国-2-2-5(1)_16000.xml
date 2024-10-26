@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <xml_result>
+      <read_sentence lan="cn" type="study" version="7,0,0,1024">
+          <rec_paper>
+              <read_sentence accuracy_score="0.000000" beg_pos="0" content="我已经有女朋友了。我们是自由恋爱的。在别人眼里。我的女朋友不算美女。可我就是喜欢她。可能是情人眼里出西施吧。我觉得她长得很耐看。属于那种第一次看见没什么感觉。但越看越好看的类型。" emotion_score="0.000000" end_pos="3344" except_info="0" fluency_score="89.128426" integrity_score="100.000000" is_rejected="false" phone_score="95.000000" time_len="3344" tone_score="100.000000" total_score="84.613899">
+                  <sentence beg_pos="0" content="我已经有女朋友了" end_pos="837" fluency_score="0.000000" phone_score="100.000000" time_len="837" tone_score="100.000000" total_score="96.436035">
+                      <word beg_pos="0" content="我" end_pos="677" symbol="wo3" time_len="677">
+                          <syll beg_pos="0" content="sil" dp_message="0" end_pos="144" rec_node_type="sil" time_len="144">
+                              <phone beg_pos="0" content="sil" dp_message="0" end_pos="144" rec_node_type="sil" time_len="144"></phone>
+                          </syll>
+                          <syll beg_pos="144" content="fil" dp_message="32" end_pos="290" rec_node_type="fil" time_len="146">
+                              <phone beg_pos="144" content="fil" dp_message="32" end_pos="290" rec_node_type="fil" time_len="146"></phone>
+                          </syll>
+                          <syll beg_pos="290" content="sil" dp_message="0" end_pos="335" rec_node_type="sil" time_len="45">
+                              <phone beg_pos="290" content="sil" dp_message="0" end_pos="335" rec_node_type="sil" time_len="45"></phone>
+                          </syll>
+                          <syll beg_pos="335" content="fil" dp_message="32" end_pos="554" rec_node_type="fil" time_len="219">
+                              <phone beg_pos="335" content="fil" dp_message="32" end_pos="554" rec_node_type="fil" time_len="219"></phone>
+                          </syll>
+                          <syll beg_pos="554" content="sil" dp_message="0" end_pos="649" rec_node_type="sil" time_len="95">
+                              <phone beg_pos="554" content="sil" dp_message="0" end_pos="649" rec_node_type="sil" time_len="95"></phone>
+                          </syll>
+                          <syll beg_pos="649" content="我" dp_message="0" end_pos="677" rec_node_type="paper" symbol="wo3" time_len="28">
+                              <phone beg_pos="649" content="_u" dp_message="0" end_pos="662" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="13"></phone>
+                              <phone beg_pos="662" content="uo" dp_message="0" end_pos="677" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="15"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="677" content="已" end_pos="692" symbol="yi3" time_len="15">
+                          <syll beg_pos="677" content="已" dp_message="0" end_pos="692" rec_node_type="paper" symbol="yi3" time_len="15">
+                              <phone beg_pos="677" content="_i" dp_message="0" end_pos="681" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="4"></phone>
+                              <phone beg_pos="681" content="i" dp_message="0" end_pos="692" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="11"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="692" content="经" end_pos="726" symbol="jing1" time_len="34">
+                          <syll beg_pos="692" content="经" dp_message="0" end_pos="726" rec_node_type="paper" symbol="jing1" time_len="34">
+                              <phone beg_pos="692" content="j" dp_message="0" end_pos="702" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                              <phone beg_pos="702" content="ing" dp_message="0" end_pos="726" is_yun="1" mono_tone="TONE1" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="24"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="726" content="有" end_pos="750" symbol="you3" time_len="24">
+                          <syll beg_pos="726" content="有" dp_message="0" end_pos="750" rec_node_type="paper" symbol="you3" time_len="24">
+                              <phone beg_pos="726" content="_i" dp_message="0" end_pos="734" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                              <phone beg_pos="734" content="iou" dp_message="0" end_pos="750" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="750" content="女" end_pos="762" symbol="nv3" time_len="12">
+                          <syll beg_pos="750" content="女" dp_message="0" end_pos="762" rec_node_type="paper" symbol="nv3" time_len="12">
+                              <phone beg_pos="750" content="n" dp_message="0" end_pos="753" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="3"></phone>
+                              <phone beg_pos="753" content="v" dp_message="0" end_pos="762" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="9"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="762" content="朋" end_pos="786" symbol="peng2" time_len="24">
+                          <syll beg_pos="762" content="朋" dp_message="0" end_pos="786" rec_node_type="paper" symbol="peng2" time_len="24">
+                              <phone beg_pos="762" content="p" dp_message="0" end_pos="773" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="11"></phone>
+                              <phone beg_pos="773" content="eng" dp_message="0" end_pos="786" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="13"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="786" content="友" end_pos="812" symbol="you8" time_len="26">
+                          <syll beg_pos="786" content="友" dp_message="0" end_pos="812" rec_node_type="paper" symbol="you0" time_len="26">
+                              <phone beg_pos="786" content="_i" dp_message="0" end_pos="792" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="792" content="iou" dp_message="0" end_pos="812" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="20"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="812" content="了" end_pos="837" symbol="le5" time_len="25">
+                          <syll beg_pos="812" content="了" dp_message="0" end_pos="837" rec_node_type="paper" symbol="le0" time_len="25">
+                              <phone beg_pos="812" content="l" dp_message="0" end_pos="816" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="4"></phone>
+                              <phone beg_pos="816" content="e" dp_message="0" end_pos="837" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="21"></phone>
+                          </syll>
+                      </word>
+                  </sentence>
+                  <sentence beg_pos="837" content="我们是自由恋爱的" end_pos="1104" fluency_score="0.000000" phone_score="81.250000" time_len="1104" tone_score="100.000000" total_score="96.436035">
+                      <word beg_pos="837" content="我" end_pos="920" symbol="wo3" time_len="83">
+                          <syll beg_pos="837" content="sil" dp_message="0" end_pos="898" rec_node_type="sil" time_len="61">
+                              <phone beg_pos="837" content="sil" dp_message="0" end_pos="898" rec_node_type="sil" time_len="61"></phone>
+                          </syll>
+                          <syll beg_pos="898" content="我" dp_message="0" end_pos="920" rec_node_type="paper" symbol="wo3" time_len="22">
+                              <phone beg_pos="898" content="_u" dp_message="0" end_pos="913" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="15"></phone>
+                              <phone beg_pos="913" content="uo" dp_message="0" end_pos="920" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="7"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="920" content="们" end_pos="934" symbol="men5" time_len="14">
+                          <syll beg_pos="920" content="们" dp_message="0" end_pos="934" rec_node_type="paper" symbol="men0" time_len="14">
+                              <phone beg_pos="920" content="m" dp_message="0" end_pos="926" is_yun="0" perr_level_msg="2" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="926" content="en" dp_message="0" end_pos="934" is_yun="1" mono_tone="TONE0" perr_level_msg="2" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="934" content="是" end_pos="976" symbol="shi4" time_len="42">
+                          <syll beg_pos="934" content="是" dp_message="0" end_pos="976" rec_node_type="paper" symbol="shi4" time_len="42">
+                              <phone beg_pos="934" content="sh" dp_message="0" end_pos="948" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                              <phone beg_pos="948" content="iii" dp_message="0" end_pos="976" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="28"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="976" content="自" end_pos="991" symbol="zi4" time_len="15">
+                          <syll beg_pos="976" content="自" dp_message="0" end_pos="991" rec_node_type="paper" symbol="zi4" time_len="15">
+                              <phone beg_pos="976" content="z" dp_message="0" end_pos="986" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                              <phone beg_pos="986" content="ii" dp_message="0" end_pos="991" is_yun="1" mono_tone="TONE4" perr_level_msg="3" perr_msg="1" rec_node_type="paper" time_len="5"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="991" content="由" end_pos="1022" symbol="you2" time_len="31">
+                          <syll beg_pos="991" content="由" dp_message="0" end_pos="1022" rec_node_type="paper" symbol="you2" time_len="31">
+                              <phone beg_pos="991" content="_i" dp_message="0" end_pos="1006" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="15"></phone>
+                              <phone beg_pos="1006" content="iou" dp_message="0" end_pos="1022" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1022" content="恋" end_pos="1048" symbol="lian4" time_len="26">
+                          <syll beg_pos="1022" content="恋" dp_message="0" end_pos="1048" rec_node_type="paper" symbol="lian4" time_len="26">
+                              <phone beg_pos="1022" content="l" dp_message="0" end_pos="1031" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="9"></phone>
+                              <phone beg_pos="1031" content="ian" dp_message="0" end_pos="1048" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="17"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1048" content="爱" end_pos="1072" symbol="ai4" time_len="24">
+                          <syll beg_pos="1048" content="爱" dp_message="0" end_pos="1072" rec_node_type="paper" symbol="ai4" time_len="24">
+                              <phone beg_pos="1048" content="_a" dp_message="0" end_pos="1052" is_yun="0" perr_level_msg="3" perr_msg="1" rec_node_type="paper" time_len="4"></phone>
+                              <phone beg_pos="1052" content="ai" dp_message="0" end_pos="1072" is_yun="1" mono_tone="TONE4" perr_level_msg="2" perr_msg="1" rec_node_type="paper" time_len="20"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1072" content="的" end_pos="1104" symbol="de5" time_len="32">
+                          <syll beg_pos="1072" content="的" dp_message="0" end_pos="1104" rec_node_type="paper" symbol="de0" time_len="32">
+                              <phone beg_pos="1072" content="d" dp_message="0" end_pos="1078" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="1078" content="e" dp_message="0" end_pos="1104" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="26"></phone>
+                          </syll>
+                      </word>
+                  </sentence>
+                  <sentence beg_pos="1104" content="在别人眼里" end_pos="1342" fluency_score="0.000000" phone_score="90.000000" time_len="1342" tone_score="100.000000" total_score="96.436035">
+                      <word beg_pos="1104" content="在" end_pos="1224" symbol="zai4" time_len="120">
+                          <syll beg_pos="1104" content="sil" dp_message="0" end_pos="1188" rec_node_type="sil" time_len="84">
+                              <phone beg_pos="1104" content="sil" dp_message="0" end_pos="1188" rec_node_type="sil" time_len="84"></phone>
+                          </syll>
+                          <syll beg_pos="1188" content="在" dp_message="0" end_pos="1224" rec_node_type="paper" symbol="zai4" time_len="36">
+                              <phone beg_pos="1188" content="z" dp_message="0" end_pos="1208" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="20"></phone>
+                              <phone beg_pos="1208" content="ai" dp_message="0" end_pos="1224" is_yun="1" mono_tone="TONE4" perr_level_msg="2" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1224" content="别" end_pos="1249" symbol="bie2" time_len="25">
+                          <syll beg_pos="1224" content="别" dp_message="0" end_pos="1249" rec_node_type="paper" symbol="bie2" time_len="25">
+                              <phone beg_pos="1224" content="b" dp_message="0" end_pos="1234" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                              <phone beg_pos="1234" content="ie" dp_message="0" end_pos="1249" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="15"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1249" content="人" end_pos="1266" symbol="ren7" time_len="17">
+                          <syll beg_pos="1249" content="人" dp_message="0" end_pos="1266" rec_node_type="paper" symbol="ren0" time_len="17">
+                              <phone beg_pos="1249" content="r" dp_message="0" end_pos="1252" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="3"></phone>
+                              <phone beg_pos="1252" content="en" dp_message="0" end_pos="1266" is_yun="1" mono_tone="TONE0" perr_level_msg="2" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1266" content="眼" end_pos="1304" symbol="yan2" time_len="38">
+                          <syll beg_pos="1266" content="眼" dp_message="0" end_pos="1304" rec_node_type="paper" symbol="yan2" time_len="38">
+                              <phone beg_pos="1266" content="_i" dp_message="0" end_pos="1273" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="7"></phone>
+                              <phone beg_pos="1273" content="ian" dp_message="0" end_pos="1304" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="31"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1304" content="里" end_pos="1342" symbol="li3" time_len="38">
+                          <syll beg_pos="1304" content="里" dp_message="0" end_pos="1342" rec_node_type="paper" symbol="li3" time_len="38">
+                              <phone beg_pos="1304" content="l" dp_message="0" end_pos="1311" is_yun="0" perr_level_msg="3" perr_msg="1" rec_node_type="paper" time_len="7"></phone>
+                              <phone beg_pos="1311" content="i" dp_message="0" end_pos="1342" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="31"></phone>
+                          </syll>
+                      </word>
+                  </sentence>
+                  <sentence beg_pos="1342" content="我的女朋友不算美女" end_pos="1586" fluency_score="0.000000" phone_score="100.000000" time_len="1586" tone_score="100.000000" total_score="96.436035">
+                      <word beg_pos="1342" content="我" end_pos="1393" symbol="wo3" time_len="51">
+                          <syll beg_pos="1342" content="sil" dp_message="0" end_pos="1358" rec_node_type="sil" time_len="16">
+                              <phone beg_pos="1342" content="sil" dp_message="0" end_pos="1358" rec_node_type="sil" time_len="16"></phone>
+                          </syll>
+                          <syll beg_pos="1358" content="我" dp_message="0" end_pos="1393" rec_node_type="paper" symbol="wo3" time_len="35">
+                              <phone beg_pos="1358" content="_u" dp_message="0" end_pos="1384" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="26"></phone>
+                              <phone beg_pos="1384" content="uo" dp_message="0" end_pos="1393" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="9"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1393" content="的" end_pos="1404" symbol="de5" time_len="11">
+                          <syll beg_pos="1393" content="的" dp_message="0" end_pos="1404" rec_node_type="paper" symbol="de0" time_len="11">
+                              <phone beg_pos="1393" content="d" dp_message="0" end_pos="1398" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="5"></phone>
+                              <phone beg_pos="1398" content="e" dp_message="0" end_pos="1404" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1404" content="女" end_pos="1420" symbol="nv3" time_len="16">
+                          <syll beg_pos="1404" content="女" dp_message="0" end_pos="1420" rec_node_type="paper" symbol="nv3" time_len="16">
+                              <phone beg_pos="1404" content="n" dp_message="0" end_pos="1410" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="1410" content="v" dp_message="0" end_pos="1420" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1420" content="朋" end_pos="1448" symbol="peng2" time_len="28">
+                          <syll beg_pos="1420" content="朋" dp_message="0" end_pos="1448" rec_node_type="paper" symbol="peng2" time_len="28">
+                              <phone beg_pos="1420" content="p" dp_message="0" end_pos="1434" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                              <phone beg_pos="1434" content="eng" dp_message="0" end_pos="1448" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1448" content="友" end_pos="1480" symbol="you8" time_len="32">
+                          <syll beg_pos="1448" content="友" dp_message="0" end_pos="1480" rec_node_type="paper" symbol="you0" time_len="32">
+                              <phone beg_pos="1448" content="_i" dp_message="0" end_pos="1456" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                              <phone beg_pos="1456" content="iou" dp_message="0" end_pos="1480" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="24"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1480" content="不" end_pos="1500" symbol="bu2" time_len="20">
+                          <syll beg_pos="1480" content="不" dp_message="0" end_pos="1500" rec_node_type="paper" symbol="bu2" time_len="20">
+                              <phone beg_pos="1480" content="b" dp_message="0" end_pos="1490" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                              <phone beg_pos="1490" content="u" dp_message="0" end_pos="1500" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1500" content="算" end_pos="1524" symbol="suan4" time_len="24">
+                          <syll beg_pos="1500" content="算" dp_message="0" end_pos="1524" rec_node_type="paper" symbol="suan4" time_len="24">
+                              <phone beg_pos="1500" content="s" dp_message="0" end_pos="1514" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                              <phone beg_pos="1514" content="uan" dp_message="0" end_pos="1524" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1524" content="美" end_pos="1550" symbol="mei2" time_len="26">
+                          <syll beg_pos="1524" content="美" dp_message="0" end_pos="1550" rec_node_type="paper" symbol="mei2" time_len="26">
+                              <phone beg_pos="1524" content="m" dp_message="0" end_pos="1532" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                              <phone beg_pos="1532" content="ei" dp_message="0" end_pos="1550" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="18"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1550" content="女" end_pos="1586" symbol="nv3" time_len="36">
+                          <syll beg_pos="1550" content="女" dp_message="0" end_pos="1586" rec_node_type="paper" symbol="nv3" time_len="36">
+                              <phone beg_pos="1550" content="n" dp_message="0" end_pos="1560" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                              <phone beg_pos="1560" content="v" dp_message="0" end_pos="1586" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="26"></phone>
+                          </syll>
+                      </word>
+                  </sentence>
+                  <sentence beg_pos="1586" content="可我就是喜欢她" end_pos="1821" fluency_score="0.000000" phone_score="100.000000" time_len="1821" tone_score="100.000000" total_score="96.436035">
+                      <word beg_pos="1586" content="可" end_pos="1661" symbol="ke2" time_len="75">
+                          <syll beg_pos="1586" content="sil" dp_message="0" end_pos="1630" rec_node_type="sil" time_len="44">
+                              <phone beg_pos="1586" content="sil" dp_message="0" end_pos="1630" rec_node_type="sil" time_len="44"></phone>
+                          </syll>
+                          <syll beg_pos="1630" content="fil" dp_message="32" end_pos="1638" rec_node_type="fil" time_len="8">
+                              <phone beg_pos="1630" content="fil" dp_message="32" end_pos="1638" rec_node_type="fil" time_len="8"></phone>
+                          </syll>
+                          <syll beg_pos="1638" content="可" dp_message="0" end_pos="1661" rec_node_type="paper" symbol="ke2" time_len="23">
+                              <phone beg_pos="1638" content="k" dp_message="0" end_pos="1654" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                              <phone beg_pos="1654" content="e" dp_message="0" end_pos="1661" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="7"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1661" content="我" end_pos="1674" symbol="wo3" time_len="13">
+                          <syll beg_pos="1661" content="我" dp_message="0" end_pos="1674" rec_node_type="paper" symbol="wo3" time_len="13">
+                              <phone beg_pos="1661" content="_u" dp_message="0" end_pos="1664" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="3"></phone>
+                              <phone beg_pos="1664" content="uo" dp_message="0" end_pos="1674" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1674" content="就" end_pos="1700" symbol="jiu4" time_len="26">
+                          <syll beg_pos="1674" content="就" dp_message="0" end_pos="1700" rec_node_type="paper" symbol="jiu4" time_len="26">
+                              <phone beg_pos="1674" content="j" dp_message="0" end_pos="1686" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="12"></phone>
+                              <phone beg_pos="1686" content="iou" dp_message="0" end_pos="1700" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1700" content="是" end_pos="1730" symbol="shi4" time_len="30">
+                          <syll beg_pos="1700" content="是" dp_message="0" end_pos="1730" rec_node_type="paper" symbol="shi4" time_len="30">
+                              <phone beg_pos="1700" content="sh" dp_message="0" end_pos="1716" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                              <phone beg_pos="1716" content="iii" dp_message="0" end_pos="1730" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1730" content="喜" end_pos="1750" symbol="xi3" time_len="20">
+                          <syll beg_pos="1730" content="喜" dp_message="0" end_pos="1750" rec_node_type="paper" symbol="xi3" time_len="20">
+                              <phone beg_pos="1730" content="x" dp_message="0" end_pos="1742" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="12"></phone>
+                              <phone beg_pos="1742" content="i" dp_message="0" end_pos="1750" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1750" content="欢" end_pos="1770" symbol="huan6" time_len="20">
+                          <syll beg_pos="1750" content="欢" dp_message="0" end_pos="1770" rec_node_type="paper" symbol="huan0" time_len="20">
+                              <phone beg_pos="1750" content="h" dp_message="0" end_pos="1754" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="4"></phone>
+                              <phone beg_pos="1754" content="uan" dp_message="0" end_pos="1770" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1770" content="她" end_pos="1821" symbol="ta1" time_len="51">
+                          <syll beg_pos="1770" content="她" dp_message="0" end_pos="1821" rec_node_type="paper" symbol="ta1" time_len="51">
+                              <phone beg_pos="1770" content="t" dp_message="0" end_pos="1782" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="12"></phone>
+                              <phone beg_pos="1782" content="a" dp_message="0" end_pos="1821" is_yun="1" mono_tone="TONE1" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="39"></phone>
+                          </syll>
+                      </word>
+                  </sentence>
+                  <sentence beg_pos="1821" content="可能是情人眼里出西施吧" end_pos="2225" fluency_score="0.000000" phone_score="90.909088" time_len="2225" tone_score="100.000000" total_score="96.436035">
+                      <word beg_pos="1821" content="可" end_pos="1906" symbol="ke3" time_len="85">
+                          <syll beg_pos="1821" content="sil" dp_message="0" end_pos="1840" rec_node_type="sil" time_len="19">
+                              <phone beg_pos="1821" content="sil" dp_message="0" end_pos="1840" rec_node_type="sil" time_len="19"></phone>
+                          </syll>
+                          <syll beg_pos="1840" content="fil" dp_message="32" end_pos="1861" rec_node_type="fil" time_len="21">
+                              <phone beg_pos="1840" content="fil" dp_message="32" end_pos="1861" rec_node_type="fil" time_len="21"></phone>
+                          </syll>
+                          <syll beg_pos="1861" content="sil" dp_message="0" end_pos="1888" rec_node_type="sil" time_len="27">
+                              <phone beg_pos="1861" content="sil" dp_message="0" end_pos="1888" rec_node_type="sil" time_len="27"></phone>
+                          </syll>
+                          <syll beg_pos="1888" content="可" dp_message="0" end_pos="1906" rec_node_type="paper" symbol="ke3" time_len="18">
+                              <phone beg_pos="1888" content="k" dp_message="0" end_pos="1900" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="12"></phone>
+                              <phone beg_pos="1900" content="e" dp_message="0" end_pos="1906" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1906" content="能" end_pos="1926" symbol="neng2" time_len="20">
+                          <syll beg_pos="1906" content="能" dp_message="0" end_pos="1926" rec_node_type="paper" symbol="neng2" time_len="20">
+                              <phone beg_pos="1906" content="n" dp_message="0" end_pos="1912" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="1912" content="eng" dp_message="0" end_pos="1926" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1926" content="是" end_pos="1974" symbol="shi4" time_len="48">
+                          <syll beg_pos="1926" content="是" dp_message="0" end_pos="1974" rec_node_type="paper" symbol="shi4" time_len="48">
+                              <phone beg_pos="1926" content="sh" dp_message="0" end_pos="1942" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                              <phone beg_pos="1942" content="iii" dp_message="0" end_pos="1974" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="32"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="1974" content="情" end_pos="2013" symbol="qing2" time_len="39">
+                          <syll beg_pos="1974" content="情" dp_message="0" end_pos="2013" rec_node_type="paper" symbol="qing2" time_len="39">
+                              <phone beg_pos="1974" content="q" dp_message="0" end_pos="1990" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                              <phone beg_pos="1990" content="ing" dp_message="0" end_pos="2013" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="23"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2013" content="人" end_pos="2026" symbol="ren2" time_len="13">
+                          <syll beg_pos="2013" content="人" dp_message="0" end_pos="2026" rec_node_type="paper" symbol="ren2" time_len="13">
+                              <phone beg_pos="2013" content="r" dp_message="0" end_pos="2016" is_yun="0" perr_level_msg="3" perr_msg="1" rec_node_type="paper" time_len="3"></phone>
+                              <phone beg_pos="2016" content="en" dp_message="0" end_pos="2026" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2026" content="眼" end_pos="2058" symbol="yan2" time_len="32">
+                          <syll beg_pos="2026" content="眼" dp_message="0" end_pos="2058" rec_node_type="paper" symbol="yan2" time_len="32">
+                              <phone beg_pos="2026" content="_i" dp_message="0" end_pos="2032" is_yun="0" perr_level_msg="2" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="2032" content="ian" dp_message="0" end_pos="2058" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="26"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2058" content="里" end_pos="2094" symbol="li3" time_len="36">
+                          <syll beg_pos="2058" content="里" dp_message="0" end_pos="2094" rec_node_type="paper" symbol="li3" time_len="36">
+                              <phone beg_pos="2058" content="l" dp_message="0" end_pos="2065" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="7"></phone>
+                              <phone beg_pos="2065" content="i" dp_message="0" end_pos="2094" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="29"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2094" content="出" end_pos="2140" symbol="chu1" time_len="46">
+                          <syll beg_pos="2094" content="出" dp_message="0" end_pos="2140" rec_node_type="paper" symbol="chu1" time_len="46">
+                              <phone beg_pos="2094" content="ch" dp_message="0" end_pos="2128" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="34"></phone>
+                              <phone beg_pos="2128" content="u" dp_message="0" end_pos="2140" is_yun="1" mono_tone="TONE1" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="12"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2140" content="西" end_pos="2160" symbol="xi1" time_len="20">
+                          <syll beg_pos="2140" content="西" dp_message="0" end_pos="2160" rec_node_type="paper" symbol="xi1" time_len="20">
+                              <phone beg_pos="2140" content="x" dp_message="0" end_pos="2150" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                              <phone beg_pos="2150" content="i" dp_message="0" end_pos="2160" is_yun="1" mono_tone="TONE1" perr_level_msg="3" perr_msg="1" rec_node_type="paper" time_len="10"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2160" content="施" end_pos="2192" symbol="shi1" time_len="32">
+                          <syll beg_pos="2160" content="施" dp_message="0" end_pos="2192" rec_node_type="paper" symbol="shi1" time_len="32">
+                              <phone beg_pos="2160" content="sh" dp_message="0" end_pos="2174" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                              <phone beg_pos="2174" content="iii" dp_message="0" end_pos="2192" is_yun="1" mono_tone="TONE1" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="18"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2192" content="吧" end_pos="2225" symbol="ba5" time_len="33">
+                          <syll beg_pos="2192" content="吧" dp_message="0" end_pos="2225" rec_node_type="paper" symbol="ba0" time_len="33">
+                              <phone beg_pos="2192" content="b" dp_message="0" end_pos="2201" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="9"></phone>
+                              <phone beg_pos="2201" content="a" dp_message="0" end_pos="2225" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="24"></phone>
+                          </syll>
+                      </word>
+                  </sentence>
+                  <sentence beg_pos="2225" content="我觉得她长得很耐看" end_pos="2512" fluency_score="0.000000" phone_score="100.000000" time_len="2512" tone_score="100.000000" total_score="96.436035">
+                      <word beg_pos="2225" content="我" end_pos="2328" symbol="wo3" time_len="103">
+                          <syll beg_pos="2225" content="sil" dp_message="0" end_pos="2306" rec_node_type="sil" time_len="81">
+                              <phone beg_pos="2225" content="sil" dp_message="0" end_pos="2306" rec_node_type="sil" time_len="81"></phone>
+                          </syll>
+                          <syll beg_pos="2306" content="我" dp_message="0" end_pos="2328" rec_node_type="paper" symbol="wo3" time_len="22">
+                              <phone beg_pos="2306" content="_u" dp_message="0" end_pos="2313" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="7"></phone>
+                              <phone beg_pos="2313" content="uo" dp_message="0" end_pos="2328" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="15"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2328" content="觉" end_pos="2344" symbol="jue2" time_len="16">
+                          <syll beg_pos="2328" content="觉" dp_message="0" end_pos="2344" rec_node_type="paper" symbol="jue2" time_len="16">
+                              <phone beg_pos="2328" content="j" dp_message="0" end_pos="2333" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="5"></phone>
+                              <phone beg_pos="2333" content="ve" dp_message="0" end_pos="2344" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="11"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2344" content="得" end_pos="2360" symbol="de5" time_len="16">
+                          <syll beg_pos="2344" content="得" dp_message="0" end_pos="2360" rec_node_type="paper" symbol="de0" time_len="16">
+                              <phone beg_pos="2344" content="d" dp_message="0" end_pos="2350" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="2350" content="e" dp_message="0" end_pos="2360" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2360" content="她" end_pos="2384" symbol="ta1" time_len="24">
+                          <syll beg_pos="2360" content="她" dp_message="0" end_pos="2384" rec_node_type="paper" symbol="ta1" time_len="24">
+                              <phone beg_pos="2360" content="t" dp_message="0" end_pos="2372" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="12"></phone>
+                              <phone beg_pos="2372" content="a" dp_message="0" end_pos="2384" is_yun="1" mono_tone="TONE1" perr_level_msg="2" perr_msg="0" rec_node_type="paper" time_len="12"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2384" content="长" end_pos="2406" symbol="zhang3" time_len="22">
+                          <syll beg_pos="2384" content="长" dp_message="0" end_pos="2406" rec_node_type="paper" symbol="zhang3" time_len="22">
+                              <phone beg_pos="2384" content="zh" dp_message="0" end_pos="2392" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                              <phone beg_pos="2392" content="ang" dp_message="0" end_pos="2406" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2406" content="得" end_pos="2422" symbol="de5" time_len="16">
+                          <syll beg_pos="2406" content="得" dp_message="0" end_pos="2422" rec_node_type="paper" symbol="de0" time_len="16">
+                              <phone beg_pos="2406" content="d" dp_message="0" end_pos="2412" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="2412" content="e" dp_message="0" end_pos="2422" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2422" content="很" end_pos="2442" symbol="hen3" time_len="20">
+                          <syll beg_pos="2422" content="很" dp_message="0" end_pos="2442" rec_node_type="paper" symbol="hen3" time_len="20">
+                              <phone beg_pos="2422" content="h" dp_message="0" end_pos="2429" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="7"></phone>
+                              <phone beg_pos="2429" content="en" dp_message="0" end_pos="2442" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="13"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2442" content="耐" end_pos="2468" symbol="nai4" time_len="26">
+                          <syll beg_pos="2442" content="耐" dp_message="0" end_pos="2468" rec_node_type="paper" symbol="nai4" time_len="26">
+                              <phone beg_pos="2442" content="n" dp_message="0" end_pos="2452" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                              <phone beg_pos="2452" content="ai" dp_message="0" end_pos="2468" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2468" content="看" end_pos="2512" symbol="kan4" time_len="44">
+                          <syll beg_pos="2468" content="看" dp_message="0" end_pos="2512" rec_node_type="paper" symbol="kan4" time_len="44">
+                              <phone beg_pos="2468" content="k" dp_message="0" end_pos="2480" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="12"></phone>
+                              <phone beg_pos="2480" content="an" dp_message="0" end_pos="2512" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="32"></phone>
+                          </syll>
+                      </word>
+                  </sentence>
+                  <sentence beg_pos="2512" content="属于那种第一次看见没什么感觉" end_pos="2896" fluency_score="0.000000" phone_score="100.000000" time_len="2896" tone_score="100.000000" total_score="96.436035">
+                      <word beg_pos="2512" content="属" end_pos="2596" symbol="shu3" time_len="84">
+                          <syll beg_pos="2512" content="sil" dp_message="0" end_pos="2540" rec_node_type="sil" time_len="28">
+                              <phone beg_pos="2512" content="sil" dp_message="0" end_pos="2540" rec_node_type="sil" time_len="28"></phone>
+                          </syll>
+                          <syll beg_pos="2540" content="fil" dp_message="32" end_pos="2562" rec_node_type="fil" time_len="22">
+                              <phone beg_pos="2540" content="fil" dp_message="32" end_pos="2562" rec_node_type="fil" time_len="22"></phone>
+                          </syll>
+                          <syll beg_pos="2562" content="属" dp_message="0" end_pos="2596" rec_node_type="paper" symbol="shu3" time_len="34">
+                              <phone beg_pos="2562" content="sh" dp_message="0" end_pos="2580" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="18"></phone>
+                              <phone beg_pos="2580" content="u" dp_message="0" end_pos="2596" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2596" content="于" end_pos="2630" symbol="yu2" time_len="34">
+                          <syll beg_pos="2596" content="于" dp_message="0" end_pos="2630" rec_node_type="paper" symbol="yu2" time_len="34">
+                              <phone beg_pos="2596" content="_v" dp_message="0" end_pos="2600" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="4"></phone>
+                              <phone beg_pos="2600" content="v" dp_message="0" end_pos="2630" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="30"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2630" content="那" end_pos="2652" symbol="na4" time_len="22">
+                          <syll beg_pos="2630" content="那" dp_message="0" end_pos="2652" rec_node_type="paper" symbol="na4" time_len="22">
+                              <phone beg_pos="2630" content="n" dp_message="0" end_pos="2638" is_yun="0" perr_level_msg="2" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                              <phone beg_pos="2638" content="a" dp_message="0" end_pos="2652" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2652" content="种" end_pos="2680" symbol="zhong3" time_len="28">
+                          <syll beg_pos="2652" content="种" dp_message="0" end_pos="2680" rec_node_type="paper" symbol="zhong3" time_len="28">
+                              <phone beg_pos="2652" content="zh" dp_message="0" end_pos="2660" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                              <phone beg_pos="2660" content="ong" dp_message="0" end_pos="2680" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="20"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2680" content="第" end_pos="2698" symbol="di4" time_len="18">
+                          <syll beg_pos="2680" content="第" dp_message="0" end_pos="2698" rec_node_type="paper" symbol="di4" time_len="18">
+                              <phone beg_pos="2680" content="d" dp_message="0" end_pos="2690" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                              <phone beg_pos="2690" content="i" dp_message="0" end_pos="2698" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2698" content="一" end_pos="2712" symbol="yi1" time_len="14">
+                          <syll beg_pos="2698" content="一" dp_message="0" end_pos="2712" rec_node_type="paper" symbol="yi1" time_len="14">
+                              <phone beg_pos="2698" content="_i" dp_message="0" end_pos="2701" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="3"></phone>
+                              <phone beg_pos="2701" content="i" dp_message="0" end_pos="2712" is_yun="1" mono_tone="TONE1" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="11"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2712" content="次" end_pos="2728" symbol="ci4" time_len="16">
+                          <syll beg_pos="2712" content="次" dp_message="0" end_pos="2728" rec_node_type="paper" symbol="ci4" time_len="16">
+                              <phone beg_pos="2712" content="c" dp_message="0" end_pos="2720" is_yun="0" perr_level_msg="2" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                              <phone beg_pos="2720" content="ii" dp_message="0" end_pos="2728" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2728" content="看" end_pos="2752" symbol="kan4" time_len="24">
+                          <syll beg_pos="2728" content="看" dp_message="0" end_pos="2752" rec_node_type="paper" symbol="kan4" time_len="24">
+                              <phone beg_pos="2728" content="k" dp_message="0" end_pos="2736" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                              <phone beg_pos="2736" content="an" dp_message="0" end_pos="2752" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2752" content="见" end_pos="2778" symbol="jian9" time_len="26">
+                          <syll beg_pos="2752" content="见" dp_message="0" end_pos="2778" rec_node_type="paper" symbol="jian0" time_len="26">
+                              <phone beg_pos="2752" content="j" dp_message="0" end_pos="2760" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                              <phone beg_pos="2760" content="ian" dp_message="0" end_pos="2778" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="18"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2778" content="没" end_pos="2804" symbol="mei2" time_len="26">
+                          <syll beg_pos="2778" content="没" dp_message="0" end_pos="2804" rec_node_type="paper" symbol="mei2" time_len="26">
+                              <phone beg_pos="2778" content="m" dp_message="0" end_pos="2790" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="12"></phone>
+                              <phone beg_pos="2790" content="ei" dp_message="0" end_pos="2804" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2804" content="什" end_pos="2820" symbol="shen2" time_len="16">
+                          <syll beg_pos="2804" content="什" dp_message="0" end_pos="2820" rec_node_type="paper" symbol="shen2" time_len="16">
+                              <phone beg_pos="2804" content="sh" dp_message="0" end_pos="2815" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="11"></phone>
+                              <phone beg_pos="2815" content="en" dp_message="0" end_pos="2820" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="5"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2820" content="么" end_pos="2834" symbol="me6" time_len="14">
+                          <syll beg_pos="2820" content="么" dp_message="0" end_pos="2834" rec_node_type="paper" symbol="me0" time_len="14">
+                              <phone beg_pos="2820" content="m" dp_message="0" end_pos="2826" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="2826" content="e" dp_message="0" end_pos="2834" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2834" content="感" end_pos="2860" symbol="gan3" time_len="26">
+                          <syll beg_pos="2834" content="感" dp_message="0" end_pos="2860" rec_node_type="paper" symbol="gan3" time_len="26">
+                              <phone beg_pos="2834" content="g" dp_message="0" end_pos="2840" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="2840" content="an" dp_message="0" end_pos="2860" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="20"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="2860" content="觉" end_pos="2896" symbol="jue2" time_len="36">
+                          <syll beg_pos="2860" content="觉" dp_message="0" end_pos="2896" rec_node_type="paper" symbol="jue2" time_len="36">
+                              <phone beg_pos="2860" content="j" dp_message="0" end_pos="2870" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                              <phone beg_pos="2870" content="ve" dp_message="0" end_pos="2896" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="26"></phone>
+                          </syll>
+                      </word>
+                  </sentence>
+                  <sentence beg_pos="2896" content="但越看越好看的类型" end_pos="3344" fluency_score="0.000000" phone_score="88.888885" time_len="3344" tone_score="100.000000" total_score="96.436035">
+                      <word beg_pos="2896" content="但" end_pos="3002" symbol="dan4" time_len="106">
+                          <syll beg_pos="2896" content="sil" dp_message="0" end_pos="2932" rec_node_type="sil" time_len="36">
+                              <phone beg_pos="2896" content="sil" dp_message="0" end_pos="2932" rec_node_type="sil" time_len="36"></phone>
+                          </syll>
+                          <syll beg_pos="2932" content="fil" dp_message="32" end_pos="2978" rec_node_type="fil" time_len="46">
+                              <phone beg_pos="2932" content="fil" dp_message="32" end_pos="2978" rec_node_type="fil" time_len="46"></phone>
+                          </syll>
+                          <syll beg_pos="2978" content="但" dp_message="0" end_pos="3002" rec_node_type="paper" symbol="dan4" time_len="24">
+                              <phone beg_pos="2978" content="d" dp_message="0" end_pos="2994" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                              <phone beg_pos="2994" content="an" dp_message="0" end_pos="3002" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="3002" content="越" end_pos="3028" symbol="yue4" time_len="26">
+                          <syll beg_pos="3002" content="越" dp_message="0" end_pos="3028" rec_node_type="paper" symbol="yue4" time_len="26">
+                              <phone beg_pos="3002" content="_v" dp_message="0" end_pos="3016" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                              <phone beg_pos="3016" content="ve" dp_message="0" end_pos="3028" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="12"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="3028" content="看" end_pos="3055" symbol="kan4" time_len="27">
+                          <syll beg_pos="3028" content="看" dp_message="0" end_pos="3055" rec_node_type="paper" symbol="kan4" time_len="27">
+                              <phone beg_pos="3028" content="k" dp_message="0" end_pos="3042" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                              <phone beg_pos="3042" content="an" dp_message="0" end_pos="3055" is_yun="1" mono_tone="TONE4" perr_level_msg="3" perr_msg="1" rec_node_type="paper" time_len="13"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="3055" content="越" end_pos="3092" symbol="yue4" time_len="37">
+                          <syll beg_pos="3055" content="越" dp_message="0" end_pos="3092" rec_node_type="paper" symbol="yue4" time_len="37">
+                              <phone beg_pos="3055" content="_v" dp_message="0" end_pos="3086" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="31"></phone>
+                              <phone beg_pos="3086" content="ve" dp_message="0" end_pos="3092" is_yun="1" mono_tone="TONE4" perr_level_msg="3" perr_msg="1" rec_node_type="paper" time_len="6"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="3092" content="好" end_pos="3120" symbol="hao3" time_len="28">
+                          <syll beg_pos="3092" content="好" dp_message="0" end_pos="3120" rec_node_type="paper" symbol="hao3" time_len="28">
+                              <phone beg_pos="3092" content="h" dp_message="0" end_pos="3106" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                              <phone beg_pos="3106" content="ao" dp_message="0" end_pos="3120" is_yun="1" mono_tone="TONE3" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="14"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="3120" content="看" end_pos="3140" symbol="kan4" time_len="20">
+                          <syll beg_pos="3120" content="看" dp_message="0" end_pos="3140" rec_node_type="paper" symbol="kan4" time_len="20">
+                              <phone beg_pos="3120" content="k" dp_message="0" end_pos="3130" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                              <phone beg_pos="3130" content="an" dp_message="0" end_pos="3140" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="10"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="3140" content="的" end_pos="3152" symbol="de5" time_len="12">
+                          <syll beg_pos="3140" content="的" dp_message="0" end_pos="3152" rec_node_type="paper" symbol="de0" time_len="12">
+                              <phone beg_pos="3140" content="d" dp_message="0" end_pos="3144" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="4"></phone>
+                              <phone beg_pos="3144" content="e" dp_message="0" end_pos="3152" is_yun="1" mono_tone="TONE0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="8"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="3152" content="类" end_pos="3174" symbol="lei4" time_len="22">
+                          <syll beg_pos="3152" content="类" dp_message="0" end_pos="3174" rec_node_type="paper" symbol="lei4" time_len="22">
+                              <phone beg_pos="3152" content="l" dp_message="0" end_pos="3158" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="6"></phone>
+                              <phone beg_pos="3158" content="ei" dp_message="0" end_pos="3174" is_yun="1" mono_tone="TONE4" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="16"></phone>
+                          </syll>
+                      </word>
+                      <word beg_pos="3174" content="型" end_pos="3344" symbol="xing2" time_len="170">
+                          <syll beg_pos="3174" content="型" dp_message="0" end_pos="3221" rec_node_type="paper" symbol="xing2" time_len="47">
+                              <phone beg_pos="3174" content="x" dp_message="0" end_pos="3194" is_yun="0" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="20"></phone>
+                              <phone beg_pos="3194" content="ing" dp_message="0" end_pos="3221" is_yun="1" mono_tone="TONE2" perr_level_msg="1" perr_msg="0" rec_node_type="paper" time_len="27"></phone>
+                          </syll>
+                          <syll beg_pos="3221" content="sil" dp_message="0" end_pos="3344" rec_node_type="sil" time_len="123">
+                              <phone beg_pos="3221" content="sil" end_pos="3344" time_len="123"></phone>
+                          </syll>
+                      </word>
+                  </sentence>
+              </read_sentence>
+          </rec_paper>
+      </read_sentence>
+  </xml_result>

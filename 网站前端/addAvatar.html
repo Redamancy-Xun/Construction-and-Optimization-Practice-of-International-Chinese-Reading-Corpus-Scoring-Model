@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RedamancyXun">
+    <meta name="description" content="即享朗读评分首页">
+    <title>即享朗读评分</title>
+    <link rel="icon" href="images/logo.svg" sizes="16x16" type="image/svg">
+    <link rel="stylesheet" href="styles/addAvatar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+    <script src="scripts/addAvatar.js" defer></script>
+  </head>
+  <body>
+    <div onclick="window.history.go(-1);">
+        <img src="images/back.svg" alt="back" class="back">
+    </div>
+    <header>
+      <h1>请上传头像</h1>
+    </header>
+    <main>
+      <div class="avatarInformation">
+          <form id="uploadForm">
+            <div id="uploadShow" class="uploadAvatarDiv">
+              <label for="uploadAvatar" >
+                <img alt="上传头像" src="images/uploadAvatar.svg" class="uploadAvatar"></img>
+              </label>
+              <input type="file" id="uploadAvatar" accept="image/*" class="uploadAvatarInput">
+            </div>
+          </form>
+          <div id="preview-container" style="display: none;">
+            <div id="show" class="show">
+                <img id="avatarShow" src="" class="avatarShow" alt="头像效果">
+                <span class="cutTip">头像效果</span>
+            </div>
+            <button id="crop-btn">
+                <img src="images/cut.svg" class="cutTipImg" alt="剪裁头像">
+            </button>
+            <div>
+              <button class="reload">
+                <img src="images/export.svg" alt="reload" class="reloadImg">
+                <span class="reloadTip">重新上传</span>
+              </button>
+              <button class="upload">
+                <img src="images/done.svg" alt="upload" class="uploadImg">
+                <span class="uploadTip">确定提交</span>
+              </button>
+            </div>
+          </div>
+    </main>
+  </body>
+</html>

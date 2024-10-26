@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RedamancyXun">
+    <meta name="description" content="即享朗读评分首页">
+    <title>即享朗读评分</title>
+    <link rel="icon" href="images/logo.svg" sizes="16x16" type="image/svg">
+    <link rel="stylesheet" href="styles/teacherLogin.css">
+    <script src="scripts/teacherLogin.js" defer></script>
+  </head>
+  <body>
+    <div onclick="window.location.href = 'index.html';">
+      <img src="images/back.svg" alt="back" class="back">
+  </div>
+    <header>
+      <h1>登录账号</h1>
+      <img src="images/logoIn.svg" alt="logo" class="indexLogo">
+    </header>
+    <main>
+      <div class="loginInformation">
+          <form id="loginForm">
+            <div class="teacherInformation">
+              <div>
+                <label for="telephone">手机号：</label>
+                <input id="telephone" type="tel" pattern="^1[3-9]\d{9}$" title="请输入有效的手机号（例如 13912345678）" name="telephone" class="telephone" required>
+              </div>
+              <div>
+                <label for="password">密码：</label>
+                <input id="password" type="password" minlength=8 maxlength=24 name="password" class="password" required>
+              </div>
+            </div>
+            <button type="submit" class="login">登录账号</button>
+          </form>
+          <div class="signup">
+            <a href="teacherSignup.html">
+                <div class="signupText">初次使用？</div>
+                <div class="signupText">创建新账号</div>
+            </a>
+          </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RedamancyXun">
+    <meta name="description" content="即享朗读评分首页">
+    <title>即享朗读评分</title>
+    <link rel="icon" href="images/logo.svg" sizes="16x16" type="image/svg">
+    <link rel="stylesheet" href="styles/studentPersonModel.css">
+    <script src="scripts/studentPersonModel.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img id="avatar" src="images/defaultAvatar.svg" alt="avatar" class="avatar">
+      <div id="welcome" class="welcome">你好，小吉祥！</div>
+      <div id="time" class="time">2024年7月8日 星期一</div>
+      <div onclick="window.location.href = 'studentIndex.html';">
+        <img src="images/back.svg" alt="back" class="back">
+    </div>
+    </header>
+    <main>    
+        <form>
+            <div class="container">
+                <label for="courseContent" class="courseTitle">
+                    请在下方输入文本
+                </label>
+                <textarea id="courseContent" class="courseContent"></textarea>
+            </div>
+            <button id="submit" class="submit">
+                上传文本
+            </button>
+        </form>
+    </main>
+  </body>
+</html>

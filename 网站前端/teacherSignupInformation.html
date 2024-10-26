@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RedamancyXun">
+    <meta name="description" content="即享朗读评分首页">
+    <title>即享朗读评分</title>
+    <link rel="icon" href="images/logo.svg" sizes="16x16" type="image/svg">
+    <link rel="stylesheet" href="styles/teacherSignupInformation.css">
+    <script src="scripts/teacherSignupInformation.js" defer></script>
+  </head>
+  <body>
+    <img src="images/cloudTop.svg" alt="cloudTop" class="cloudTop">
+    <header>
+        <h1>学生信息导入</h1>
+        <img src="images/logoIn.svg" alt="logo" class="indexLogo">
+    </header>
+    <main>
+        <div class="signupInformation">
+            <form id="signupForm">
+              <div class="teacherInformation">
+                <div>
+                    <label for="telephone">学生手机号：</label>
+                    <input id="telephone" type="tel" pattern="^1[3-9]\d{9}$" title="请输入有效的手机号（例如 13912345678）" name="telephone" class="telephone" required>
+                </div>
+                <div>
+                  <label for="name">学生姓名：</label>
+                  <input id="name" type="text" name="name" class="name" required>
+                </div>
+                <div>
+                  <label for="class">所在班级：</label>
+                  <input id="class" type="text" name="class" class="class" required>
+                </div>
+              </div>
+              <button id="uploadStudentInformation" type="submit" class="uploadStudentInformation">继续添加</button>
+              <a href="teacherIndex" class="finish">
+                <div>导入完毕/</div>
+                <div>稍后添加</div>
+              </a>
+            </form>
+        </div>
+    </main>
+    <img src="images/cloudBottom.svg" alt="cloudBottom" class="cloudBottom">
+  </body>
+</html>

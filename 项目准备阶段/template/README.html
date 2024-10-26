@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x6587;&#x6863;</title>
+            <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+            
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
+}
+
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
+}
+</style>
+<style>
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
+}
+
+</style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
+
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="文档">文档</h1>
+<h2 id="前置步骤">前置步骤</h2>
+<ol>
+<li>将dist目录下<code>processor.worker.js</code>、<code>processor.worklet.js</code>复制到项目目录中，使其可以通过浏览器地址栏访问，</li>
+<li>浏览器录音权限需要在localhost、127.0.0.1或https下</li>
+</ol>
+<h2 id="recordermanager">RecorderManager</h2>
+<p>浏览器录音管理器</p>
+<h2 id="方法">方法</h2>
+<h3 id="recordermanagerconstructorprocessorpath">RecorderManager.constructor(processorPath)</h3>
+<p>构造函数</p>
+<blockquote>
+<p><code>processorPath</code>是 <code>processor.worker.js</code>、<code>processor.worklet.js</code>的路径地址，如果访问地址<code>/a/b/c/processor.worker.js</code>，则processorPath为<code>/a/b/c</code></p>
+</blockquote>
+<h3 id="recordermanagerstartobject-object">RecorderManager.start(Object object)</h3>
+<p>开始录音</p>
+<p>Object object</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>默认值</th>
+<th>必填</th>
+<th>取值范围</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sampleRate</td>
+<td>number</td>
+<td>浏览器默认采样率</td>
+<td>否</td>
+<td>8000 ~ 96000</td>
+<td>采样率</td>
+</tr>
+<tr>
+<td>frameSize</td>
+<td>number</td>
+<td>-</td>
+<td>否</td>
+<td>&gt;0</td>
+<td>指定帧大小，传入 frameSize 后，每录制指定帧大小的内容后，会回调录制的文件内容，不指定则不会回调。ps:在不支持设置采样率的浏览器下，录音分片数据会比此处设置的值大</td>
+</tr>
+<tr>
+<td>arrayBufferType</td>
+<td>string</td>
+<td>-</td>
+<td>否</td>
+<td>&quot;short16&quot; &quot;float32&quot;</td>
+<td>音频数据ArrayBuffer类型</td>
+</tr>
+</tbody>
+</table>
+<h3 id="recordermanagerstop">RecorderManager.stop()</h3>
+<p>停止录音</p>
+<blockquote>
+<p>调用stop后，还需要等待浏览器处理完已经录制的音频后才会真正结束，需要在停止录音成功后做的处理请在<code>.onStop</code>回调中处理</p>
+</blockquote>
+<h3 id="recordermanageronstart--function-listener">RecorderManager.onStart = function listener</h3>
+<p>监听录音开始事件</p>
+<h3 id="recordermanageronstop--function-listener">RecorderManager.onStop = function listener</h3>
+<p>监听录音结束事件</p>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> <span class="hljs-title function_">listener</span> = (<span class="hljs-params">audioBuffers: <span class="hljs-built_in">ArrayBuffer</span>[]</span>) =&gt; {}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>audioBuffers</td>
+<td>ArrayBuffer[]</td>
+<td>录音分片数据数组</td>
+</tr>
+</tbody>
+</table>
+<h3 id="recordermanageronframerecorded--function-listener">RecorderManager.onFrameRecorded = function listener</h3>
+<p>监听已录制完指定帧大小的文件事件。如果设置了 frameSize，则会回调此事件。</p>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> <span class="hljs-title function_">listener</span> = (<span class="hljs-params">{isLastFrame, frameBuffer} : {
+  isLastFrame: boolean;
+  frameBuffer: <span class="hljs-built_in">ArrayBuffer</span>;
+}</span>) =&gt; {}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>isLastFrame</td>
+<td>boolean</td>
+<td>当前帧是否正常录音结束前的最后一帧</td>
+</tr>
+<tr>
+<td>frameSize</td>
+<td>ArrayBuffer</td>
+<td>录音分片数据</td>
+</tr>
+</tbody>
+</table>
+<h2 id="示例代码">示例代码</h2>
+<pre><code class="language-js"><span class="hljs-keyword">const</span> recorder = <span class="hljs-keyword">new</span> <span class="hljs-title class_">RecorderManager</span> (<span class="hljs-string">&quot;../../dist&quot;</span>);
+
+recorder.<span class="hljs-property">onFrameRecorded</span> = <span class="hljs-function">(<span class="hljs-params">{ isLastFrame, frameBuffer }</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(isLastFrame, frameBuffer)
+};
+recorder.<span class="hljs-property">onStop</span> = <span class="hljs-function">(<span class="hljs-params">audioBuffers</span>) =&gt;</span> {
+  <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(audioBuffers)
+}
+
+
+recorder.<span class="hljs-title function_">start</span>({
+  <span class="hljs-attr">sampleRate</span>: <span class="hljs-number">16000</span>,
+  <span class="hljs-attr">frameSize</span>: <span class="hljs-number">1280</span>,
+});
+
+<span class="hljs-built_in">setTimeout</span>(<span class="hljs-function">() =&gt;</span> {
+  recorder.<span class="hljs-title function_">stop</span>()
+}, <span class="hljs-number">60000</span>)
+
+</code></pre>
+<h2 id="听写示例">听写示例</h2>
+<p>查看example/iat
+将example/iat/index.html下面的值替换成真实的值</p>
+<pre><code class="language-js">  <span class="hljs-keyword">var</span> <span class="hljs-variable constant_">APPID</span> = <span class="hljs-string">&quot;xxx&quot;</span>;
+  <span class="hljs-keyword">var</span> <span class="hljs-variable constant_">API_SECRET</span> = <span class="hljs-string">&quot;xxx&quot;</span>;
+  <span class="hljs-keyword">var</span> <span class="hljs-variable constant_">API_KEY</span> = <span class="hljs-string">&quot;xxx&quot;</span>;
+</code></pre>
+<h2 id="实时语音转写">实时语音转写</h2>
+<p>查看example/rtasr
+将example/rtasr/index.html下面的值替换成真实的值</p>
+<pre><code class="language-js">  <span class="hljs-keyword">var</span> <span class="hljs-variable constant_">APPID</span> = <span class="hljs-string">&quot;xxx&quot;</span>;
+  <span class="hljs-keyword">var</span> <span class="hljs-variable constant_">API_KEY</span> = <span class="hljs-string">&quot;xxx&quot;</span>;
+
+</code></pre>
+<h3 id="运行">运行</h3>
+<ol>
+<li>安装 <code>npm install -g http-server</code></li>
+<li>运行 <code>http-server .</code></li>
+<li>浏览器打开听写示例：<a href="http://127.0.0.1">http://127.0.0.1</a>:xxx/example/iat/index.html</li>
+<li>浏览器打开实时语音转写示例：<a href="http://127.0.0.1">http://127.0.0.1</a>:xxx/example/rtasr/index.html</li>
+</ol>
+
+            
+            
+        </body>
+        </html>

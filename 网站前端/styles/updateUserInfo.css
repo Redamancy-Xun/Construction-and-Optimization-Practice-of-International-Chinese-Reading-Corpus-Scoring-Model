@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "myFont";
+    src:
+      url("fonts/YouSheBiaoTiYuan.woff2") format("woff2"),
+      url("fonts/YouSheBiaoTiYuan.woff") format("woff"),
+      url("fonts/YouSheBiaoTiYuan.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: "myFont";
+    font-style: normal;
+    background-color: rgb(181, 223, 252);
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+}
+
+.cloudTop {
+    width: 100%;
+    margin-top: -13%;
+}
+
+.back {
+    width: 10%;
+    position: absolute;
+    top: 7%;
+    left: 10%;
+}
+
+header {
+    margin-top: -20%;
+}
+
+h1 {
+    text-shadow: 6px 7px 20px  rgba(0, 0, 0, 0.27);
+    /* border: 1px solid rgba(255, 255, 255, 1); */
+    font-size: 3.4em;
+    opacity: 1;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: rgba(0, 0, 0, 1);
+    text-align: center;
+    margin:0%;
+
+    -webkit-text-stroke: 0.3px rgb(255, 255, 255); /* 文字周围的轮廓，参数为宽度和颜色 */
+}
+
+.indexLogo {
+    width: 16%;
+    top: 20%;
+    right: 4%;
+    position: absolute;
+}
+
+.updateUserInfo {
+    margin-top: 5%;
+}
+
+.studentInformation {
+    margin: 0 auto;
+    width: 80%;
+    opacity: 1;
+    border-radius: 25px;
+    background: rgba(94, 161, 213, 1);
+    padding: 5% 0px;
+}
+
+label { 
+    opacity: 1;
+    /** 文本1 */
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    vertical-align: top;
+    line-height: 180%;
+    margin-left: 7%;
+    margin-right: 0%;
+}
+
+input {
+    width: 50%;
+    line-height: 200%;
+    opacity: 1;
+    border-radius: 31.23px;
+    background: rgba(255, 255, 255, 1);
+    border: 0px;
+    margin: 2% auto;
+    text-align: left;
+    padding-left: 4%;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: rgb(32, 30, 30);
+    text-decoration-style: solid;
+}
+
+input:focus {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sexTip {
+    opacity: 1;
+    /** 文本1 */
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0px;
+    color: rgba(255, 255, 255, 1);
+    text-align: left;
+    vertical-align: top;
+    line-height: 280%;
+    margin-left: 7%;
+    margin-right: 0%;
+}
+
+.maleButton {
+    width: 2.6em;
+    height: 2.6em;
+    opacity: 1;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 1);
+    border: 0px;
+    margin: 1%;
+    margin-left: -2%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: "myFont";
+    letter-spacing: 0px;
+    color: rgb(32, 30, 30);
+}
+
+.maleButton.selected {
+    background: rgba(249, 137, 136, 1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.femaleButton.selected {
+    background: rgba(249, 137, 136, 1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.femaleButton {
+    width: 2.6em;
+    height: 2.6em;
+    opacity: 1;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 1);
+    border: 0px;
+    margin: 1%;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: "myFont";
+    letter-spacing: 0px;
+    color: rgb(32, 30, 30);
+}
+
+.defaultAvatar {
+    width: 4.2em;
+    height: 4.2em;
+    margin: 1%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.avatar {
+    width: 2.7em;
+    height: 2.7em;
+    border-radius: 100%;
+    background: rgba(229, 229, 229, 1);
+    border: 0px;
+    margin: 1%;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 400;
+    font-family: "myFont";
+    line-height: 130%;
+    color: rgb(32, 30, 30);
+    display: inline-flex;
+    padding: 2%;
+}
+
+.avatarTips {
+    opacity: 1;
+    /** 文本1 */
+    font-size: 1.3em;
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+    line-height: 100%;
+    margin-left: 30%;
+}
+
+.update {
+    background: rgba(249, 137, 136, 1);
+    width: 3em;
+    line-height: 3em;
+    opacity: 1;
+    border: 0px;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: 10%;
+    margin-right: 10%;
+    display: block;
+    /** 文本1 */
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: "myFont";
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.update:focus {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.cloudBottom {
+    width: 60%;
+    margin-left: 40%;
+    margin-top: -14%;
+    position: absolute; /* 或者设置为 absolute 或 fixed */
+    z-index: -1; /* 设置元素的层叠顺序 */
+    bottom: 0;
+    left: 0;
+}
