@@ -11,6 +11,8 @@
     <script src="scripts/studentTestModelCourse.js" defer></script>
   </head>
   <body>
+    <!-- 当前界面 -->
+    <div id="current-screen">
     <header>
       <img id="avatar" src="images/defaultAvatar.svg" alt="avatar" class="avatar">
       <div id="welcome" class="welcome">你好，小吉祥！</div>
@@ -50,11 +52,31 @@
                     <button id="cancel" class="control-button" title="取消录音">❌</button>
                 </div>
             </div>
-            <label for="audio-file" class="uploadAudio">
-                <img src="images/uploadAudio.svg" alt="上传录音" class="uploadAudioTip">
+            <label for="audioFile" class="uploadAudio">
+                <img src="images/uploadAudio.svg" alt="上传录音" class="uploadAudioTip" id="uploadAudio">
             </label>
-            <input type="file" id="audio-file" accept="audio/*" hidden>
+            <input type="file" id="audio-file" accept="audio/*" style="display: none;">
         </div>
-    </main>
+        </main> 
+    </div>
+
+        <!-- 新界面 -->
+    <div id="new-screen" style="display: none;">
+        <img src="images/cloudTop.svg" alt="cloudTop" class="cloudTop">
+        <header class="headerLoader">
+          <h1>加载中</h1>
+          <h1>请耐心等候~</h1>
+          <h1 id="countdown">加载中...</h1>
+          <img src="images/logoIn.svg" alt="logo" class="indexLogo">
+        </header>
+        <main>
+          <div class="containerLoader">
+            <!-- <img src="images/loading.svg" alt="loadingImage" id="loadingImage" class="loadingImage"> -->
+            <div class="loaderBackGround"><div class="loader"></div></div>
+          </div>
+          <div class="loadingText" id="loadingText">Loading......</div>
+        </main>
+        <img src="images/cloudBottom.svg" alt="cloudBottom" class="cloudBottom">
+    </div>
   </body>
 </html>

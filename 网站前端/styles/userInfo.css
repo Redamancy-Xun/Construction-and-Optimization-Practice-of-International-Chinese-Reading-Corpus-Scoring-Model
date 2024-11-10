@@ -5,7 +5,7 @@
       url("fonts/YouSheBiaoTiYuan.woff") format("woff"),
       url("fonts/YouSheBiaoTiYuan.svg") format("svg");
     font-weight: normal;
-    font-style: normal;
+    font-style: normal; 
 }
 
 html {
@@ -119,13 +119,28 @@ header {
     margin-top: 2%;
     background: rgba(94, 161, 213, 1);
     border-radius: 30px;
-    width: 75%;
-    padding: 6%;
-    font-size: 1.3em;
-    color: white;
+    width: 80%;
+    padding: 4%;
+    /* font-size: 1.3em; */
+    /* color: white;
     white-space: pre-wrap;
+    text-align:justify; */
+    /* line-height: 150%; */
+}
+
+.advice-detail {
+    background: rgba(255, 255, 255, 0.66);
+    color: #000;
+    border-radius: 30px;
+    padding: 5%;
+    margin: 5% auto;
+    max-height: 50%;
     text-align:justify;
+    font-family: arial;
+    font-size: 1.1em;
     line-height: 150%;
+    white-space:initial; /* 保留空格和换行 */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
 }
 
 .historyTitle {
@@ -142,13 +157,100 @@ header {
     margin-top: 2%;
     background: rgba(94, 161, 213, 1);
     border-radius: 30px;
-    width: 75%;
-    padding: 6%;
+    width: 80%;
+    padding: 4%;
     font-size: 1.3em;
     color: white;
     white-space: pre-wrap;
     text-align:justify;
     line-height: 150%;
+}
+
+.history-detail {
+    background-color: rgba(255, 255, 255, 0.66);
+    margin: 5% auto;
+    border-radius: 30px;
+    padding: 4%;
+    color: black;
+    font-size: 1em;
+    line-height: 160%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.history-detail-number {
+    text-align: center;
+    margin: 3% auto;
+    color: rgb(255, 255, 255);
+    background: rgba(249, 137, 136, 1);
+    /* background-color: rgba(241, 207, 81, 1); */
+    font-size: 1.3em;
+    padding: 2%;
+    border-radius: 20px;
+    width: 90%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.history-detail-title {
+    font-size: 1.15em;
+    color: black;
+    /* text-shadow: 3px 3px 10rgba(2, 2, 2, 0.2).2); */
+    margin-right: 0%;
+    margin-left: 3%;
+    /* background-color: rgba(241, 207, 81, 1); */
+    border-radius: 5px;
+    padding: 0% 1%;
+}
+
+.history-detail-content {
+    text-decoration:underline;
+}
+
+.history-detail-content-advice {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 5%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    line-height: 130%;
+    font-size: 1em;
+    margin-top: 2%;
+    text-align:justify;
+    white-space: pre-wrap; /* 保留空格和换行 */
+}
+
+.history-detail-person-flag {
+    background-color: rgba(241, 207, 81, 1);
+    border-radius: 20px;
+    text-align: center;
+    margin: 4% auto;
+    margin-bottom: 5%;
+    margin-left: 3%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
+}
+
+.history-detail-person-block {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 4% 5%;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    margin: 4% auto;
+    width: 85%;
+}
+
+.history-detail-person-title {
+    font-size: 1.15em;
+    color: black;
+    /* text-shadow: 3px 3px 10rgba(2, 2, 2, 0.2).2); */
+    /* background-color: rgba(241, 207, 81, 1); */
+    text-decoration: underline;
+}
+
+.history-detail-person-content {
+    line-height: 130%;
+    font-size: 1em;
+    padding:0% 2%;
+    text-align:justify;
+    white-space: pre-wrap; /* 保留空格和换行 */
 }
 
 .edit {

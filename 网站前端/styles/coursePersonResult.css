@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "myFont";
+    src:
+      url("fonts/YouSheBiaoTiYuan.woff2") format("woff2"),
+      url("fonts/YouSheBiaoTiYuan.woff") format("woff"),
+      url("fonts/YouSheBiaoTiYuan.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-family: "myFont";
+    font-style: normal;
+    background-color: rgb(181, 223, 252);
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px;
+    border: 0px;
+}
+
+header {
+    margin-top: 2%;
+}
+
+.avatar {
+    width: 5.4em;
+    height: 5.4em;
+    border-radius: 100%;
+    position: absolute;
+    left: 1.9em;
+    top: 2.4em;
+}
+
+.welcome {
+    margin-left: 4.2em;
+    margin-top: 1.7em;
+    font-size: 1.9em;
+}
+
+.time {
+    font-size: 1.2em;
+    margin-left: 6.7em;
+    margin-top: 0em;
+}
+
+.back {
+    width: 10%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+
+.courseTitle {
+    font-size: 1.9em;
+    margin-top: 6%;
+    margin-bottom:-3%;
+}
+
+.reading {
+    margin-left: 5%;
+    margin-bottom: -5%;
+}
+
+.courseName {
+    background: rgba(255, 255, 255, 0.66);
+    border-radius: 30px;
+    font-size: 0.6em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 5%;
+    width: 75%;
+    margin: 5% auto;
+    white-space: pre-wrap; /* 保留空格和换行 */
+    text-align:justify;
+}
+
+.courseResult {
+    background: rgba(241, 207, 81, 1);
+    width: 75%;
+    border-radius: 30px;
+    padding: 6%;
+    margin: 7% auto;
+    margin-bottom: -2%;
+    margin-top: 8%;
+}
+
+.title {
+    font-size: 1.8em;
+    display: inline-block;
+    margin-right: -4%;
+}
+
+.star {
+    font-size: 1.9em;
+    color: rgb(186, 182, 182);
+    cursor: pointer;
+    transition: color 0.3s;
+
+}
+
+.star.active {
+    color: rgb(0, 0, 0);
+}
+
+.advice {
+    background: rgba(241, 207, 81, 1);
+    width: 75%;
+    border-radius: 30px;
+    padding: 5%;
+    margin: 7% auto;
+}
+
+.adviceDetail {
+    background: rgba(255, 255, 255, 0.66);
+    border-radius: 10px;
+    padding: 6%;
+}
+
+.adviceTitle {
+    font-size: 2.1em;
+}
+
+.adviceContent {
+    white-space: pre-wrap;
+    text-align:justify;
+    margin-top: 3%;
+    font-size: 1.35em;
+    line-height: 120%;
+}

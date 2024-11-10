@@ -16,6 +16,40 @@ if (localStorage.getItem('username')) {
 if (localStorage.getItem('avatar')) {
     document.getElementById('avatar').src = localStorage.getItem('avatar');
 }
+if (localStorage.getItem('courseName')) {
+    document.querySelector('.courseName').textContent = localStorage.getItem('courseName');
+}
+
+let speed;
+let pause;
+let initialConsonants;
+let finalVowels;
+let tones;
+let completeness;
+let advice;
+
+// 从LocalStorage中获取courseResult
+if (localStorage.getItem('speed')) {
+    speed = parseInt(localStorage.getItem('speed'));
+}
+if (localStorage.getItem('pause')) {
+    pause = parseInt(localStorage.getItem('pause'));
+}
+if (localStorage.getItem('initialConsonants')) {
+    initialConsonants = parseInt(localStorage.getItem('initialConsonants'));
+}
+if (localStorage.getItem('finalVowels')) {
+    finalVowels = parseInt(localStorage.getItem('finalVowels'));
+}
+if (localStorage.getItem('tones')) {
+    tones = parseInt(localStorage.getItem('tones'));
+}
+if (localStorage.getItem('completeness')) {
+    completeness = parseInt(localStorage.getItem('completeness'));
+}
+if (localStorage.getItem('advice')) {
+    advice = localStorage.getItem('advice');
+}
 
 // 实时改变time
 function showTime() {
@@ -30,27 +64,24 @@ function showTime() {
 
 showTime();
 
-// 获取localStorage中的courseResult
-const courseResult = JSON.parse(localStorage.getItem('courseResult'));
-
-document.querySelector('.course').innerText = courseResult.courseName;
-
 function setStarRating(ratingLow, retingHigh) {
     const stars = document.querySelectorAll('.star');
     stars.forEach((star, index) => {
-        if (index >= ratingLow && index <= retingHigh) {
+        if (index >= ratingLow && index < retingHigh) {
             star.classList.add('active');
-        } else {
-            star.classList.remove('active');
         }
     });
 }
 
-for (let i = 0; i < courseResult.rating.size(); i++) {
-    setStarRating(courseResult.rating[i][0], courseResult.rating[i][1]);
-}
+setStarRating(0, speed);
+setStarRating(5, 5 + pause);
+setStarRating(10, 10 + initialConsonants);
+setStarRating(15, 15 + finalVowels);
+setStarRating(20, 20 + tones);
+setStarRating(25, 25 + completeness);
 
-document.querySelector('.adviceContent').innerText = courseResult.adviceContent;
+// 显示advice
+document.querySelector('.adviceContent').innerText = advice;
 
 // 跳转到userInfo页面
 const avatar = document.getElementById('avatar');

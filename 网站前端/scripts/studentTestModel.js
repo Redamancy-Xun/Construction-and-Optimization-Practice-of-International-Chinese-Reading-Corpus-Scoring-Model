@@ -16,6 +16,13 @@ if (localStorage.getItem('username')) {
 if (localStorage.getItem('avatar')) {
     document.getElementById('avatar').src = localStorage.getItem('avatar');
 }
+let bookNumber;
+const bookNameTag = ['高级汉语听说教程上册', '发展汉语初级综合课文', '中级汉语听说教材上册', '中级汉语听说教材下册']
+if (localStorage.getItem('bookNumber')) {
+    bookNumber = localStorage.getItem('bookNumber');
+    document.getElementById('bookName').innerText = bookNameTag[bookNumber];
+}
+
 
 // 实时改变time
 function showTime() {
@@ -30,10 +37,31 @@ function showTime() {
 
 showTime();
 
+// 辅助函数：将阿拉伯数字转换为中文数字
+function numberToChinese(num) {
+    const chineseNumbers = ['零', '一', '二', '三', '四', '五', '六', '七', '八', '九'];
+    const chineseTens = ['', '十', '百', '千', '万'];
+    const numStr = num.toString();
+    let result = '';
+
+    for (let i = 0; i < numStr.length; i++) {
+        const digit = parseInt(numStr[i]);
+        const place = numStr.length - i - 1;
+        if (digit !== 0) {
+            result += chineseNumbers[digit] + chineseTens[place];
+        } else if (place === 0 && result.length > 0 && result[result.length - 1] === '零') {
+            result = result.slice(0, -1);
+        }
+    }
+
+    return result;
+}
+
 document.addEventListener('DOMContentLoaded', async function() {
     try {
+
         // 调用后端接口
-        const response = await fetch('http://localhost:8080/lesson/getLessonList', {
+        const response = await fetch(`http://localhost:8080/lesson/getLessonList?bookNumber=${bookNumber}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -54,7 +82,6 @@ document.addEventListener('DOMContentLoaded', async function() {
 
             const lessonCount = data.result.totalUnits;
             const lessonList = data.result.lessons;
-            const digitToChinese = ['一', '二', '三', '四', '五', '六', '七', '八', '九', '十', '十一', '十二', '十三', '十四', '十五', '十六', '十七', '十八', '十九', '二十', '二十一', '二十二', '二十三', '二十四'];
 
             // 获取模块容器
             const container = document.getElementById('unit-list');
@@ -70,7 +97,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                 moduleElement.onclick = function() {
                     toggleCourses(moduleElement);
                 };
-                moduleElement.textContent = '第' + digitToChinese[i] + '单元';
+                moduleElement.textContent = '第' + numberToChinese(i + 1) + '单元';
                     
                 // 创建课程列表容器
                 const coursesContainer = document.createElement('div');
@@ -81,7 +108,7 @@ document.addEventListener('DOMContentLoaded', async function() {
                     const courseElement = document.createElement('button');
                         courseElement.className = 'course';
                         courseElement.id = `${i + 1}-${j + 1}`;
-                        courseElement.textContent = '第' + digitToChinese[i] + '单元' + ' 第' + digitToChinese[j] + '课';
+                        courseElement.textContent = '第' + numberToChinese(i + 1) + '单元' + ' 第' + numberToChinese(j + 1) + '课';
                         coursesContainer.appendChild(courseElement);
                     }
     
@@ -112,10 +139,16 @@ document.addEventListener('DOMContentLoaded', async function() {
         
             // // 获取课程编号value
             // const unitId = event.target.parentElement.parentElement.value + '-' + event.target.value;
+
+            // 储存课程名称到 localStorage
+            localStorage.setItem('courseName', event.target.innerText);
+
+            // 储存课程编号到 localStorage
+            localStorage.setItem('courseId', event.target.id);
         
             try {
                 // 发送 AJAX 请求（GET）到后端获取课程信息接口
-                const response = await fetch(`http://localhost:8080/lesson/getLessonDetail?unitId=${event.target.id}`, {
+                const response = await fetch(`http://localhost:8080/lesson/getLessonDetail?unitId=${event.target.id}&bookNumber=${bookNumber}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
