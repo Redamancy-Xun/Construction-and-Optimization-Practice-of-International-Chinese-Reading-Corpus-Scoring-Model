@@ -47,6 +47,10 @@ document.getElementById('uploadStudentInformation').addEventListener('submit', a
 
             // 例如，重定向到首页
             window.location.href = 'teacherIndex.html';
+        }else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+            // 会话过期或未授权，重定向到登录页面
+            alert(`${data.message}`);
+            window.location.href = 'index.html';
         } else {
             // 注册失败，显示错误信息
             alert(`信息录入失败：${data.message}`);

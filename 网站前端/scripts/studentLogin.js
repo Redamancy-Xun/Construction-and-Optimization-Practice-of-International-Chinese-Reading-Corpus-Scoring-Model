@@ -16,7 +16,7 @@ document.getElementsByClassName('login')[0].addEventListener('click', async even
 
     try {
         // 发送 AJAX 请求到后端登录接口
-        const response = await fetch('http://localhost:8080/user/login?telephone=' + telephone + '&password=' + password + '&role=' + role, {
+        const response = await fetch('https://chinese.redamancyxun.fun:8080/user/login?telephone=' + telephone + '&password=' + password + '&role=' + role, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -48,6 +48,10 @@ document.getElementsByClassName('login')[0].addEventListener('click', async even
 
             // 例如，重定向到首页
             window.location.href = 'studentIndex.html';
+        } else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+            // 会话过期或未授权，重定向到登录页面
+            alert(`${data.message}`);
+            window.location.href = 'index.html';
         } else {
             // 登录失败，显示错误信息
             alert(`登录失败：${data.message}`);

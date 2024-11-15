@@ -20,7 +20,6 @@ if (localStorage.getItem('courseContent')) {
     document.querySelector('.courseName').textContent = localStorage.getItem('courseContent');
 }
 
-
 let speed;
 let pause;
 let initialConsonants;
@@ -71,8 +70,6 @@ function setStarRating(ratingLow, retingHigh) {
     stars.forEach((star, index) => {
         if (index >= ratingLow && index <= retingHigh) {
             star.classList.add('active');
-        } else {
-            star.classList.remove('active');
         }
     });
 }

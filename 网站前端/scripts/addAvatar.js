@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.log(previewImage.src);
                 
                 // 发送 AJAX 请求到后端图片上传接口
-                const uploadResponse = await fetch('http://localhost:8080/user/uploadPortrait', {
+                const uploadResponse = await fetch('https://chinese.redamancyxun.fun:8080/user/uploadPortrait', {
                     method: 'POST',
                     headers: {
                         'session': token // 发送会话令牌
@@ -165,6 +165,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     localStorage.setItem('avatar', data.result);
 
                     window.location.href = 'addAvatar.html'; // 可选的重定向
+                } else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+                    // 会话过期或未授权，重定向到登录页面
+                    alert(`${data.message}`);
+                    window.location.href = 'index.html';
                 } else {
                     // 上传失败，显示错误信息
                     alert(`上传失败：${data.message}`);

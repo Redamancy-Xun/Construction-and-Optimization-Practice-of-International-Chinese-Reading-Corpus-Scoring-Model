@@ -253,6 +253,18 @@ header {
     white-space: pre-wrap; /* 保留空格和换行 */
 }
 
+.logout {
+    background-color: rgba(241, 207, 81, 1);
+    border-radius: 20px;
+    text-align: center;
+    margin: 4% auto;
+    margin-bottom: 5%;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    font-size: 2em;
+    line-height: 140%;
+}
+
 .edit {
     position: absolute;
     right: 14%;

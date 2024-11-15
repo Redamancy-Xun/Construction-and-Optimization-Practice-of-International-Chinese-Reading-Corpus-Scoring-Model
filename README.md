@@ -68,7 +68,7 @@
 
 ## 二、Web
 
-> <u>***网址***</u>：
+> <u>***网址***</u>：[即享朗读评分](https://chinese.redamancyxun.fun/index.html)
 
 ### 2.1 需求分析
 

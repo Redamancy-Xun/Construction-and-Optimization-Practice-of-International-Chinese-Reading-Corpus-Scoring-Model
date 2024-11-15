@@ -8,6 +8,7 @@
     <title>即享朗读评分</title>
     <link rel="icon" href="images/logo.svg" sizes="16x16" type="image/svg">
     <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
   </head>
   <body>
     <img src="images/cloudTop.svg" alt="cloudTop" class="cloudTop">
@@ -19,14 +20,14 @@
     <main>
       <div class="container">
         <p class="chooseRule">请选择你的登入身份</p>
-        <div class="student">
-          <a href="studentLogin.html">
+        <div class="student" id="student">
+          <a>
             <img src="images/student.svg" alt="学生登入" class="studentImage">
             <p class="studentText">我是学生</p>
           </a>
         </div>
-        <div class="teacher">
-          <a href="teacherLogin.html">
+        <div class="teacher" id="teacher">
+          <a>
             <img src="images/teacher.svg" alt="教师登入" class="teacherImage">
             <p class="teacherText">我是老师</p>
           </a>

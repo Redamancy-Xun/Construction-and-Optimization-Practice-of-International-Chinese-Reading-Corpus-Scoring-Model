@@ -300,7 +300,7 @@ uploadButton.addEventListener("click", async () => {
                 }, 1000);
     
                 // 发送 AJAX 请求到后端音频上传接口
-                const uploadResponse = await fetch('http://localhost:8080/score/score', {
+                const uploadResponse = await fetch('https://chinese.redamancyxun.fun:8080/score/score', {
                     method: 'POST',
                     headers: {
                         'session': token, // 发送会话令牌
@@ -328,17 +328,48 @@ uploadButton.addEventListener("click", async () => {
                     localStorage.setItem('tones', data.result.tones);
                     localStorage.setItem('completeness', data.result.completeness);
                     localStorage.setItem('advice', data.result.advice);
+
+                    fetch('https://chinese.redamancyxun.fun:8080/user/updateSuggestion', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'session': token, // 发送会话令牌
+                        },
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // 处理返回的数据
+                        console.log(data);
+                    })
+                    .catch(error => {
+                        // 处理错误
+                        console.error('There was a problem with the fetch operation:', error);
+                    });
     
                     window.location.href = 'coursePersonResult.html'; // 可选的重定向
+                }else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+                    // 会话过期或未授权，重定向到登录页面
+                    alert(`${data.message}`);
+                    window.location.href = 'index.html';
                 } else {
                     // 上传失败，显示错误信息
                     alert(`上传失败：${data.message}`);
                     console.error(`上传失败：${data.message}`);
                 }
             } catch (error) {
+                if (error.name === 'AbortError') {
+                    console.log('请求被中止:', error.message);
+                    alert('评分系统将在后台运行，可在历史记录中查看本次评分结果。')
+                    // 在这里进行特殊处理，例如记录日志或显示提示信息
+                }
                 // 处理网络错误或其他异常
                 console.error('网络错误:', error);
-                alert('网络错误，请稍后再试。');
+                alert('评分系统将在后台运行，可在历史记录中查看本次评分结果。');
             }
         };
     
@@ -474,7 +505,7 @@ audioFileInput.addEventListener("change", async (event) => {
                 }, 1000);
 
                 // 发送 AJAX 请求到后端音频上传接口
-                const uploadResponse = await fetch('http://localhost:8080/score/score', {
+                const uploadResponse = await fetch('https://chinese.redamancyxun.fun:8080/score/score', {
                     method: 'POST',
                     headers: {
                         'session': token, // 发送会话令牌
@@ -505,16 +536,47 @@ audioFileInput.addEventListener("change", async (event) => {
 
                     console.log('上传成功，结果:', data.result);
 
+                    fetch('https://chinese.redamancyxun.fun:8080/user/updateSuggestion', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'session': token, // 发送会话令牌
+                        },
+                    })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // 处理返回的数据
+                        console.log(data);
+                    })
+                    .catch(error => {
+                        // 处理错误
+                        console.error('There was a problem with the fetch operation:', error);
+                    });
+
                     window.location.href = 'courseResult.html'; // 可选的重定向
+                }else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+                    // 会话过期或未授权，重定向到登录页面
+                    alert(`${data.message}`);
+                    window.location.href = 'index.html';
                 } else {
                     // 上传失败，显示错误信息
                     alert(`上传失败：${data.message}`);
                     console.error(`上传失败：${data.message}`);
                 }
             } catch (error) {
+                if (error.name === 'AbortError') {
+                    console.log('请求被中止:', error.message);
+                    alert('评分系统将在后台运行，可在历史记录中查看本次评分结果。')
+                    // 在这里进行特殊处理，例如记录日志或显示提示信息
+                }
                 // 处理网络错误或其他异常
                 console.error('网络错误:', error);
-                alert('网络错误，请稍后再试。');
+                alert('评分系统将在后台运行，可在历史记录中查看本次评分结果。');
             }
         };
 

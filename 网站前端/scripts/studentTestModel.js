@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     try {
 
         // 调用后端接口
-        const response = await fetch(`http://localhost:8080/lesson/getLessonList?bookNumber=${bookNumber}`, {
+        const response = await fetch(`https://chinese.redamancyxun.fun:8080/lesson/getLessonList?bookNumber=${bookNumber}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -118,6 +118,10 @@ document.addEventListener('DOMContentLoaded', async function() {
                 // 将模块添加到容器中
                 container.appendChild(moduleElement);
             }
+        }else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+            // 会话过期或未授权，重定向到登录页面
+            alert(`${data.message}`);
+            window.location.href = 'index.html';
         } else {
             // 注册失败，显示错误信息
             alert(`获取课程列表：${data.message}`);
@@ -148,7 +152,7 @@ document.addEventListener('DOMContentLoaded', async function() {
         
             try {
                 // 发送 AJAX 请求（GET）到后端获取课程信息接口
-                const response = await fetch(`http://localhost:8080/lesson/getLessonDetail?unitId=${event.target.id}&bookNumber=${bookNumber}`, {
+                const response = await fetch(`https://chinese.redamancyxun.fun:8080/lesson/getLessonDetail?unitId=${event.target.id}&bookNumber=${bookNumber}`, {
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',
@@ -173,6 +177,14 @@ document.addEventListener('DOMContentLoaded', async function() {
         
                     // 例如，重定向到首页
                     window.location.href = 'studentTestModelCourse.html';
+                } else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+                    // 会话过期或未授权，重定向到登录页面
+                    alert(`上传失败：${data.message}`);
+                    window.location.href = 'index.html';
+                }else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+                    // 会话过期或未授权，重定向到登录页面
+                    alert(`${data.message}`);
+                    window.location.href = 'index.html';
                 } else {
                     // 注册失败，显示错误信息
                     alert(`进入课程失败：${data.message}`);

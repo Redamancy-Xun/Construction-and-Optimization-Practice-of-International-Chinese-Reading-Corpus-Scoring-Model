@@ -51,7 +51,7 @@ document.getElementById('studentSignup').addEventListener('click', async event =
 
     try {
         // 发送 AJAX 请求到后端注册接口
-        const response = await fetch('http://localhost:8080/user/signup?telephone=' + telephone + '&password=' + password + '&role=' + role, {
+        const response = await fetch('https://chinese.redamancyxun.fun:8080/user/signup?telephone=' + telephone + '&password=' + password + '&role=' + role, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -86,6 +86,10 @@ document.getElementById('studentSignup').addEventListener('click', async event =
 
             // 例如，重定向到首页
             window.location.href = 'studentSignupInformation.html';
+        }else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+            // 会话过期或未授权，重定向到登录页面
+            alert(`${data.message}`);
+            window.location.href = 'index.html';
         } else {
             // 注册失败，显示错误信息
             alert(`注册失败：${data.message}`);

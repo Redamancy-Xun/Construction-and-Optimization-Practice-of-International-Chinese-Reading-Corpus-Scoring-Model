@@ -75,7 +75,7 @@ time.addEventListener('click', () => {
 // 加载用户信息接口
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch('http://localhost:8080/user/getUserInfo', {
+        const response = await fetch('https://chinese.redamancyxun.fun:8080/user/getUserInfo', {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 const historyNumber = document.createElement('div');
                 historyNumber.className = 'history-detail-number';
-                historyNumber.textContent = `第 ${data.result.history[i].id} 次练习`
+                historyNumber.textContent = `第 ` + `${i + 1}` + ` 次练习`;
 
                 // 课本
                 const historyBook = document.createElement('div');
@@ -297,6 +297,25 @@ document.addEventListener('DOMContentLoaded', async () => {
                 container.appendChild(moduleElement);
             }
 
+            const sex = document.getElementById('sex');
+            if (data.result.gender === 0) {
+                sex.innerText = '男';
+            }
+            else if (data.result.gender === 1) {
+                sex.innerText = '女';
+            } else {
+                sex.innerText = '保密';
+            }
+
+
+        }else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+            // 会话过期或未授权，重定向到登录页面
+            alert(`${data.message}`);
+            window.location.href = 'index.html';
+        }else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+            // 会话过期或未授权，重定向到登录页面
+            alert(`${data.message}`);
+            window.location.href = 'index.html';
         } else {
             alert(`用户信息获取失败：${data.message}`);
         }
@@ -318,4 +337,46 @@ document.addEventListener('DOMContentLoaded', async () => {
     moduleElement.innerHTML = htmlContent;
     document.getElementById('advice').innerHTML = '';
     document.getElementById('advice').appendChild(moduleElement);
+});
+
+const logout = document.getElementById('logout');
+
+logout.addEventListener('click', async () => {
+    try {
+        // 发送 AJAX 请求到后端登录接口
+        const response = await fetch('https://chinese.redamancyxun.fun:8080/user/logout', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'session' : token
+            }
+        });
+
+        // 检查响应状态
+        if (!response.ok) {
+            throw new Error(`服务器响应错误: ${response.status}`);
+        }
+
+        // 解析响应 JSON 数据
+        const data = await response.json();
+
+        if (data.code === 0) {
+            // 登录成功，处理成功逻辑
+            alert('登出成功！');
+
+            // 例如，重定向到首页
+            window.location.href = 'index.html';
+        }else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+            // 会话过期或未授权，重定向到登录页面
+            alert(`${data.message}`);
+            window.location.href = 'index.html';
+        } else {
+            // 登录失败，显示错误信息
+            alert(`登出失败：${data.message}`);
+        }
+    } catch (error) {
+        // 处理网络错误或其他异常
+        console.error('网络错误:', error);
+        alert('网络错误，请稍后再试。');
+    }
 });

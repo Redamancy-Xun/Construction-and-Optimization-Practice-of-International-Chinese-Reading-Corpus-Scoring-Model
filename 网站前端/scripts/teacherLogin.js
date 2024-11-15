@@ -46,6 +46,10 @@ document.getElementById('studentLogin').addEventListener('submit', async event =
 
             // 例如，重定向到首页
             window.location.href = '/teacherIndex';
+        }else if (data.code === 2003 || data.code == 2004 || data.code === 9041) {
+            // 会话过期或未授权，重定向到登录页面
+            alert(`${data.message}`);
+            window.location.href = 'index.html';
         } else {
             // 登录失败，显示错误信息
             alert(`登录失败：${data.message}`);
