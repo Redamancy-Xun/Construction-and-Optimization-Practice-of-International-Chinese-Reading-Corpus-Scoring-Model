@@ -109,6 +109,7 @@ document.getElementById('change').addEventListener('click', async event => {
         }
     } catch (error) {
         // 处理网络错误或其他异常
+
         console.error('网络错误:', error);
         alert('网络错误，请稍后再试。');
     }
