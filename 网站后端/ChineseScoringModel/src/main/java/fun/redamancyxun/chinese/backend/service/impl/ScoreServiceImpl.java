@@ -439,7 +439,7 @@ public class ScoreServiceImpl implements ScoreService {
                 .build();
         System.out.println("评分完成！结果是：" + audioScoreResponse);
 
-//        String userId = user.getId();
+//        String userId = user.getId();generate_train_json.py
 //
 //        // 异步更新用户信息
 //        ExecutorService executorService = Executors.newFixedThreadPool(2);

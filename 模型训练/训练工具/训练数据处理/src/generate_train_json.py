@@ -52,7 +52,7 @@ def main(input_file, output_file, json_file):
     with open(output_file, 'w', encoding='utf-8') as f:
         pass  # JSONL 文件不需要初始化
     for index, row in df.iterrows():
-        json_data = generate_json(df, index, scoring_criteria)
+        json_data = generate_json(df, index, scoring_criteria)w
         save_jsonl(json_data, output_file)
 
 if __name__ == "__main__":
