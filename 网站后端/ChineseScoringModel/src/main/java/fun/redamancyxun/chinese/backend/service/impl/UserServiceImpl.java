@@ -73,7 +73,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
     public UserInfoResponse signup(String telephone, String password, Integer role) throws MyException {
 
         // 如果手机号已经被使用，则报错提醒
-        QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+        QueryWrapper<User> query Wrapper = new QueryWrapper<>();
         queryWrapper.eq("telephone", telephone);
         if (userMapper.selectCount(queryWrapper) != 0){
             throw new MyException(EnumExceptionType.TELEPHONE_EXIST);
